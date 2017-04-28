@@ -1,20 +1,20 @@
-import {Component, View} from 'angular2/core';
-import {bootstrap} from 'angular2/platform/browser';
-import {G2System} from 'g-2-system';
+require('core-js/client/shim');
+require('zone.js/dist/zone');
 
-@Component({
-  selector: 'main'
-})
+require('@angular/common');
+require('rxjs');
 
-@View({
-  directives: [G2System],
-  template: `
-    <g-2-system></g-2-system>
-  `
-})
+require('./index.scss');
 
-class Main {
+var ngCore = require('@angular/core');
+var ngPbd = require('@angular/platform-browser-dynamic');
+var AppModule = require('./app');
 
+if (process.env.NODE_ENV === 'production') {
+  ngCore.enableProdMode();
+} else {
+  Error['stackTraceLimit'] = Infinity; // eslint-disable-line dot-notation
+  require('zone.js/dist/long-stack-trace-zone');
 }
 
-bootstrap(Main);
+ngPbd.platformBrowserDynamic().bootstrapModule(AppModule);
