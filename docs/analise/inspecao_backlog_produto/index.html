@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Inspeção - Backlog do Produto - Twitter Requirements</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Twitter Requirements</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pŕe-rastreabilidade <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../pre-rastreabilidade/richpicture/">RichPicture</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elicitação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../elicitacao/entrevistas/entrevistas/">Entrevistas</a>
+</li>
+                                    
+<li >
+    <a href="../../elicitacao/storytelling/">Storytelling</a>
+</li>
+                                    
+<li >
+    <a href="../../elicitacao/requisitos/">Requisitos & MoSCoW</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modelagem <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../modelagem/cenarios/cenarios-1_0/">Cenários 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../../modelagem/cenarios/cenarios/">Cenários 0.1</a>
+</li>
+                                    
+<li >
+    <a href="../../modelagem/lexicos/lexicos-1_0/">Léxicos 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../../modelagem/lexicos/lexicos/">Léxicos 0.1</a>
+</li>
+                                    
+<li >
+    <a href="../../modelagem/use_cases_specifications/user_case_geral/">Caso de uso - Geral</a>
+</li>
+                                    
+<li >
+    <a href="../../modelagem/use_cases_specifications/trending_topics/">Caso de uso - Trending Topics</a>
+</li>
+                                    
+<li >
+    <a href="../../modelagem/use_cases_specifications/login/">Caso de uso - Login</a>
+</li>
+                                    
+<li >
+    <a href="../../modelagem/backlog_do_produto/">Backlog do produto</a>
+</li>
+                                    
+<li >
+    <a href="../../modelagem/NFR/nfr_diagramas/">NFR</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Análise <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../definicao/">Definição</a>
+</li>
+                                    
+<li >
+    <a href="../inspecao_rich_picture/">Inspeção RichPicture - Template</a>
+</li>
+                                    
+<li >
+    <a href="../inspecao_moscow_requisitos/">Inspeção - MoSCoW e Requisitos</a>
+</li>
+                                    
+<li >
+    <a href="../inspecao_entrevistas/">Inspeção - Entrevistas</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Inspeção - Backlog do Produto</a>
+</li>
+                                    
+<li >
+    <a href="../inspecao_nfr/">Inspeção - NFR</a>
+</li>
+                                    
+<li >
+    <a href="../inspecao_cenarios/">Inspeção - Cenários</a>
+</li>
+                                    
+<li >
+    <a href="../inspecao_lexicos/">Inspeção - Léxicos</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Outros artefatos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../outros_artefatos/PDCA/">PDCA</a>
+</li>
+                                    
+<li >
+    <a href="../../outros_artefatos/5w2h/">5W2H</a>
+</li>
+                                    
+<li >
+    <a href="../../outros_artefatos/swot/">SWOT</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../inspecao_entrevistas/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../inspecao_nfr/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Requisitos2-2019/Twitter/edit/master/docs/analise/inspecao_backlog_produto.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#inspecao-backlog-de-produto">Inspeção - Backlog de Produto</a></li>
+            <li><a href="#verificacao">Verificação</a></li>
+            <li><a href="#parecer-tecnico">Parecer técnico</a></li>
+            <li><a href="#validacao">Validação</a></li>
+            <li><a href="#resultado-da-validacao-na-visao-da-persona">Resultado da Validação - na visão da Persona</a></li>
+            <li><a href="#referencias">Referências</a></li>
+            <li><a href="#versionamento-de-edicoes-desta-pagina">Versionamento de edições desta página</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><span style="margin-left: 40%;"><img alt="Twitter Logo" src="../../images/twitter-logo-100px.png" /></span></p>
+<hr />
+<h1 id="inspecao-backlog-de-produto">Inspeção - Backlog de Produto</h1>
+<hr />
+<h2 id="verificacao"><a href="#"><strong>Verificação</strong></a></h2>
+<h3 id="criterios-de-aceitacao-check-list">Critérios de aceitação - <em>Check-list</em></h3>
+<p><strong>Autor dos critérios:</strong> Fernando Aguilar</br></p>
+<blockquote>
+<ol>
+<li>O backlog do produto corresponde à realidade das funcionalidades desejadas para o Twitter?</li>
+<li>Os links estão redirecionados para o rastro corretamente?</li>
+<li>Em cada linha da tabela, o rastro está completo ou é possível adicionar mais requisitos ?</li>
+<li>A tabela com criterios de aceitação de cada ID corresponde corretamente à realidade do projeto?</li>
+</ol>
+</blockquote>
+<hr />
+<h3 id="resultados-da-avaliacao-inicial">Resultados da avaliação inicial</h3>
+<h4 id="backlog-do-produto-"><strong>[Backlog do Produto]</strong> -</h4>
+<p><em>Versão do artefato:</em> 0.1 </br>
+<em>Link para o artefato:</em> <a href="../../modelagem/backlog_do_produto"><strong>[Backlog do Produto]</strong></a> </br>
+<em>Autor da avaliação técnica:</em> Fernando Aguilar</br></p>
+<table>
+<thead>
+<tr>
+<th>Código da US</th>
+<th>Critério nº</th>
+<th>Atende ao critério?</th>
+<th>Classificação do defeito</th>
+<th>Tipo do defeito</th>
+<th>Pontos a serem trabalhados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US01"><strong>US01</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US01"><strong>US01</strong></a></td>
+<td>2</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US01"><strong>US01</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US01"><strong>US01</strong></a></td>
+<td>4</td>
+<td>Não</td>
+<td>Complemento</td>
+<td>mínimo</td>
+<td>É possível adicionar mais criterios de aceitação</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US02"><strong>US02</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US02"><strong>US02</strong></a></td>
+<td>2</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US02"><strong>US02</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US02"><strong>US02</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US03"><strong>US03</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US03"><strong>US03</strong></a></td>
+<td>2</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US03"><strong>US03</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US03"><strong>US03</strong></a></td>
+<td>4</td>
+<td>Não</td>
+<td>Complemento</td>
+<td>mínimo</td>
+<td>É possível adicionar mais critérios de aceitação</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US04"><strong>US04</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US04"><strong>US04</strong></a></td>
+<td>2</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US04"><strong>US04</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US04"><strong>US04</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US05"><strong>US05</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US05"><strong>US05</strong></a></td>
+<td>2</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US05"><strong>US05</strong></a></td>
+<td>3</td>
+<td>Não</td>
+<td>rastros incompletos</td>
+<td>mínimo</td>
+<td>adicionar outros requisitos</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US05"><strong>US05</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US06"><strong>US06</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US06"><strong>US06</strong></a></td>
+<td>2</td>
+<td>Não</td>
+<td>Link quebrado</td>
+<td>médio</td>
+<td>o link da UC está quebrado</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US06"><strong>US06</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US06"><strong>US06</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US07"><strong>US07</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US07"><strong>US07</strong></a></td>
+<td>2</td>
+<td>Não</td>
+<td>Link quebrado</td>
+<td>médio</td>
+<td>o link da UC está quebrado</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US07"><strong>US07</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US07"><strong>US07</strong></a></td>
+<td>4</td>
+<td>Não</td>
+<td>Complemento</td>
+<td>mínimo</td>
+<td>É possível adicionar mais critérios de aceitação</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US08"><strong>US08</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US08"><strong>US08</strong></a></td>
+<td>2</td>
+<td>Não</td>
+<td>Link quebrado</td>
+<td>médio</td>
+<td>o link da UC está quebrado</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US08"><strong>US08</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US08"><strong>US08</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US09"><strong>US09</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US09"><strong>US09</strong></a></td>
+<td>2</td>
+<td>Não</td>
+<td>Link quebrado</td>
+<td>médio</td>
+<td>o link da UC está quebrado</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US09"><strong>US09</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US09"><strong>US09</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US10"><strong>US10</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US10"><strong>US10</strong></a></td>
+<td>2</td>
+<td>Não</td>
+<td>Link quebrado</td>
+<td>médio</td>
+<td>o link da UC está quebrado</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US10"><strong>US10</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US10"><strong>US10</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US11"><strong>US11</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US11"><strong>US11</strong></a></td>
+<td>2</td>
+<td>Não</td>
+<td>Link quebrado</td>
+<td>médio</td>
+<td>o link da UC está quebrado</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US11"><strong>US11</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US11"><strong>US11</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US12"><strong>US12</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US12"><strong>US12</strong></a></td>
+<td>2</td>
+<td>Não</td>
+<td>Link quebrado</td>
+<td>médio</td>
+<td>o link da UC está quebrado</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US12"><strong>US12</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US12"><strong>US12</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US13"><strong>US13</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US13"><strong>US13</strong></a></td>
+<td>2</td>
+<td>Não</td>
+<td>Link quebrado</td>
+<td>médio</td>
+<td>o link da UC está quebrado</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US13"><strong>US13</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US13"><strong>US13</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US14"><strong>US14</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US14"><strong>US14</strong></a></td>
+<td>2</td>
+<td>Não</td>
+<td>Link quebrado</td>
+<td>médio</td>
+<td>o link da UC está quebrado</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US14"><strong>US14</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US14"><strong>US14</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US15"><strong>US15</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US15"><strong>US15</strong></a></td>
+<td>2</td>
+<td>Não</td>
+<td>Link quebrado</td>
+<td>médio</td>
+<td>o link da UC está quebrado</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US15"><strong>US15</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US15"><strong>US15</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US16"><strong>US16</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US16"><strong>US16</strong></a></td>
+<td>2</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US16"><strong>US16</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US16"><strong>US16</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US17"><strong>US17</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US17"><strong>US17</strong></a></td>
+<td>2</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US17"><strong>US17</strong></a></td>
+<td>3</td>
+<td>Não</td>
+<td>rastros incompletos</td>
+<td>mínimo</td>
+<td>adicionar outros requisitos</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US17"><strong>US17</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US18"><strong>US18</strong></a></td>
+<td>1</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US18"><strong>US18</strong></a></td>
+<td>2</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US18"><strong>US18</strong></a></td>
+<td>3</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+<tr>
+<td><a href="../../modelagem/backlog_do_produto/#US18"><strong>US18</strong></a></td>
+<td>4</td>
+<td>Sim</td>
+<td>Nao tem defeito</td>
+<td>mínimo</td>
+<td>nenhum</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="parecer-tecnico"><strong>Parecer técnico</strong></h2>
+<p><strong>Parecer do refatorador</strong></br>
+<em>Autor:</em> Erick Giffoni</p>
+<p><strong>O artefato foi refatorado</strong>.</br>
+Algumas observações :</p>
+<ul>
+<li>US06 - o link para a US não está quebrado ;</li>
+<li>US07 - o link para o UC não está quebrado ;</li>
+<li>US08 - o link para o UC não está quebrado ;</li>
+<li>US09 - o link para o UC não está quebrado ;</li>
+<li>US10 - o link para o UC não está quebrado ;</li>
+<li>US11 - o link para o UC não está quebrado ;</li>
+<li>US12 - o link para o UC não está quebrado ;</li>
+<li>US13 - o link para o UC não está quebrado ;</li>
+<li>US14 - o link para o UC não está quebrado ;</li>
+<li>US15 - o link para o UC não está quebrado ;</br>
+Consertei todos os links acima.</br></li>
+<li>US17 - adicionei outros <em>critérios</em> de aceitação .</li>
+</ul>
+<h2 id="validacao"><a href="#"><strong>Validação</strong></a></h2>
+<h3 id="validacao-por-persona">Validação por <em>Persona</em></h3>
+<h4 id="definicao-da-persona">Definição da <em>Persona</em></h4>
+<blockquote>
+<p>A persona é um desenvolvedor que está entrando no projeto e busca pelo backlog do produto para poder se direcionar no desenvolvimento de novas funcionalidades do sistema. Ele é Junior e portanto precisa de pessoas para lhe dizerem o que fazer e como fazer;</p>
+</blockquote>
+<h2 id="resultado-da-validacao-na-visao-da-persona">Resultado da Validação - na visão da <em>Persona</em></h2>
+<blockquote>
+<p>Como nossa persona se guia pela tabela de backlog, pois esta serve para definir quais são as funcionalidades a serem implementadas no sistema, uma tabela com requisitos e rastreabilidade ajuda-o na hora de conferir se o que ele está desenvolvendo está de acordo com os padrões definidos pelos critérios de aceitação, diminuiondo assim a carga cognitiva.</p>
+</blockquote>
+<hr />
+<h2 id="referencias">Referências</h2>
+<ol>
+<li><strong>[Ebrary]</strong> Young, Ralph. Requirements Engineering Handbook. Norwood, US:
+   Artech House Books, 2003.</li>
+<li><strong>[Open Access]</strong> Leite, Julio Cesar Sampaio do Prado. Livro Vivo - Engenharia de
+   Requisitos. <a href="http://livrodeengenhariaderequisitos.blogspot.com.br/">http://livrodeengenhariaderequisitos.blogspot.com.br/</a>(último acesso:2019)</li>
+</ol>
+<hr />
+<h2 id="versionamento-de-edicoes-desta-pagina">Versionamento de edições desta página</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Autor</th>
+<th>Descrição</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>02/11/2019</td>
+<td>Fernando Aguilar</td>
+<td>Criação da página</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>04/11/2019</td>
+<td>Erick Giffoni</td>
+<td>Adição do parecer do refatorador</td>
+<td>0.2</td>
+</tr>
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

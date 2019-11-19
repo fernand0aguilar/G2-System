@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>NFR - Twitter Requirements</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Twitter Requirements</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pŕe-rastreabilidade <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../pre-rastreabilidade/richpicture/">RichPicture</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elicitação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../elicitacao/entrevistas/entrevistas/">Entrevistas</a>
+</li>
+                                    
+<li >
+    <a href="../../../elicitacao/storytelling/">Storytelling</a>
+</li>
+                                    
+<li >
+    <a href="../../../elicitacao/requisitos/">Requisitos & MoSCoW</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modelagem <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../cenarios/cenarios-1_0/">Cenários 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../../cenarios/cenarios/">Cenários 0.1</a>
+</li>
+                                    
+<li >
+    <a href="../../lexicos/lexicos-1_0/">Léxicos 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../../lexicos/lexicos/">Léxicos 0.1</a>
+</li>
+                                    
+<li >
+    <a href="../../use_cases_specifications/user_case_geral/">Caso de uso - Geral</a>
+</li>
+                                    
+<li >
+    <a href="../../use_cases_specifications/trending_topics/">Caso de uso - Trending Topics</a>
+</li>
+                                    
+<li >
+    <a href="../../use_cases_specifications/login/">Caso de uso - Login</a>
+</li>
+                                    
+<li >
+    <a href="../../backlog_do_produto/">Backlog do produto</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">NFR</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Análise <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../analise/definicao/">Definição</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_rich_picture/">Inspeção RichPicture - Template</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_moscow_requisitos/">Inspeção - MoSCoW e Requisitos</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_entrevistas/">Inspeção - Entrevistas</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_backlog_produto/">Inspeção - Backlog do Produto</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_nfr/">Inspeção - NFR</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_cenarios/">Inspeção - Cenários</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_lexicos/">Inspeção - Léxicos</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Outros artefatos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../outros_artefatos/PDCA/">PDCA</a>
+</li>
+                                    
+<li >
+    <a href="../../../outros_artefatos/5w2h/">5W2H</a>
+</li>
+                                    
+<li >
+    <a href="../../../outros_artefatos/swot/">SWOT</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../backlog_do_produto/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../../analise/definicao/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Requisitos2-2019/Twitter/edit/master/docs/modelagem/NFR/nfr_diagramas.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#nfr-framework">NFR Framework</a></li>
+            <li><a href="#diagrama-geral">Diagrama Geral</a></li>
+            <li><a href="#diagrama-de-seguranca">Diagrama de Segurança</a></li>
+            <li><a href="#diagrama-de-usabilidade">Diagrama de Usabilidade</a></li>
+            <li><a href="#diagrama-de-desempenho-ou-performance">Diagrama de Desempenho ou Performance</a></li>
+            <li><a href="#modelagem_3">Modelagem</a></li>
+            <li><a href="#versionamento-de-edicoes-desta-pagina">Versionamento de edições desta página</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><span style="margin-left: 40%;"><img alt="Twitter Logo" src="../../../images/twitter-logo-100px.png" /></span></p>
+<hr />
+<h1 id="nfr-framework">NFR Framework</h1>
+<p>Diagramas desenvolvidos:</p>
+
+<ul>
+<li><a href="#nfr_geral"><strong>Diagrama Geral;</strong></a></li>
+<li><a href="#nfr_seguranca"><strong>Diagrama de Segurança;</strong></a></li>
+<li><a href="#nfr_usabilidade"><strong>Diagrama de Usabilidade;</strong></a></li>
+<li><a href="#nfr_performance"><strong>Diagrama de Desempenho ou Performance;</strong></a></li>
+</ul>
+<hr />
+<h2 id="diagrama-geral"><strong>Diagrama Geral</strong></h2>
+<p><strong>Autor(es): Todo o grupo</strong></p>
+<blockquote>
+<ul>
+<li>Junção dos NFR'S de segurança, usabilidade e desempenho</li>
+</ul>
+</blockquote>
+<h3 id="modelagem">Modelagem</h3>
+<p><span id="nfr_geral"></span>
+<img alt="NFR geral" src="../images/geral.png" /></p>
+<hr />
+<h2 id="diagrama-de-seguranca"><strong>Diagrama de Segurança</strong></h2>
+<p><strong>Autor(es): Erick e Fernando</strong></p>
+<blockquote>
+<ul>
+<li><strong>Confidencialidade:</strong><ul>
+<li>Criptografia;</li>
+<li>Integridade do banco de dados;</li>
+<li>Termo de serviço.</li>
+</ul>
+</li>
+<li><strong>Unidade da conta</strong> - Somente quem tem a senha consegue acessar a conta:<ul>
+<li>Garantir o vínculo com apenas um email;</li>
+<li>Autenticação:<ul>
+<li>Conferir se a conta existe:<ul>
+<li>O nome de usuário e a senha fornecidos não correspondem às informações em nossos registros. Verifique-as e tente novamente.</li>
+</ul>
+</li>
+<li>Autenticação de dois fatores:<ul>
+<li>Email;</li>
+<li>SMS;</li>
+<li>Google Authentication.</li>
+</ul>
+</li>
+<li>Não sou um robô;</li>
+<li>Sistema contra ataque de busca exaustiva de chave.</li>
+</ul>
+</li>
+<li>Recuperação de senha:<ul>
+<li>Via email;</li>
+<li>Via pergunta de segurança.</li>
+</ul>
+</li>
+<li>Redefinir senha;</li>
+</ul>
+</li>
+<li><strong>Redundância:</strong><ul>
+<li>Backup do banco de dados.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="modelagem_1">Modelagem</h3>
+<p><span id="nfr_seguranca"></span>
+<img alt="NFR Twitter Segurança" src="../images/NFR-Seguranca.png" /></p>
+<hr />
+<h2 id="diagrama-de-usabilidade"><strong>Diagrama de Usabilidade</strong></h2>
+<p><strong>Autor(es): Aline e Lorrany</strong></p>
+<blockquote>
+<ul>
+<li><strong>Visabilidade eficiente do Status do Sistema:</strong><ul>
+<li>Ver posts publicados em tempo real;</li>
+<li>Atualização automática do feed.</li>
+</ul>
+</li>
+<li><strong>Facilidade de Uso:</strong><ul>
+<li>Uso de linguagem apropriada:<ul>
+<li>Uso de linguagem própria relacionada às ações do usuário.</li>
+</ul>
+</li>
+<li>Ícones intuitivos:<ul>
+<li>Ícones com legendas auto-explicativas.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Design e estética razoávelmente intuitiva:</strong><ul>
+<li>Aparência agradável ao usuário:<ul>
+<li>Aplicar o design da aplicação em todas as áreas delas;</li>
+<li>Utilizar uma paleta de cores para o design da aplicação.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="modelagem_2">Modelagem</h3>
+<p><span id="nfr_usabilidade"></span>
+<img alt="NFR Twitter Usabilidade" src="../images/NFR-Usabilidade.jpg" /></p>
+<hr />
+<h2 id="diagrama-de-desempenho-ou-performance"><strong>Diagrama de Desempenho ou Performance</strong></h2>
+<p><strong>Autor(es): Bruno e Eugênio</strong></p>
+<blockquote>
+<ul>
+<li><strong>Espaço:</strong><ul>
+<li>Datacenters.</li>
+</ul>
+</li>
+<li><strong>Tempo de resposta:</strong><ul>
+<li>Taxa de transferência.<ul>
+<li>Usar formato descompactado;</li>
+<li>Usar indexação.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="modelagem_3">Modelagem</h2>
+<p><span id="nfr_performance"></span>
+<img alt="NFR Twitter Performance" src="../images/NFR-Performance.png" /></p>
+<hr />
+<h2 id="versionamento-de-edicoes-desta-pagina">Versionamento de edições desta página</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Autor</th>
+<th>Descrição</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20/10/2019</td>
+<td>Fernando Aguilar</td>
+<td>Criação da página e ajuste para a adição do diagrama de segurança.</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>21/10/2019</td>
+<td>Bruno Duarte</td>
+<td>Ajuste da página para a adição do diagrama de performance.</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>21/10/2019</td>
+<td>Eugênio Sales</td>
+<td>Ajuste da página para a adição do diagrama de performance.</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>21/10/2019</td>
+<td>Aline Laureano e Lorrany Azevedo</td>
+<td>Ajuste da página para a adição do diagrama de usabilidade.</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>21/10/2019</td>
+<td>Lorrany Azevedo</td>
+<td>Ajuste da página para a adição do diagrama Geral.</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>22/10/2019</td>
+<td>Aline Laureano</td>
+<td>Padronização do layout da página e adição dos links internos para os diagramas.</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>22/10/2019</td>
+<td>Erick Giffoni</td>
+<td>Adição dos autores de cada diagrama</td>
+<td>0.6.1</td>
+</tr>
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

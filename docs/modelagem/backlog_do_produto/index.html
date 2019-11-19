@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Backlog do produto - Twitter Requirements</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">Twitter Requirements</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pŕe-rastreabilidade <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../pre-rastreabilidade/richpicture/">RichPicture</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elicitação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../elicitacao/entrevistas/entrevistas/">Entrevistas</a>
+</li>
+                                    
+<li >
+    <a href="../../elicitacao/storytelling/">Storytelling</a>
+</li>
+                                    
+<li >
+    <a href="../../elicitacao/requisitos/">Requisitos & MoSCoW</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modelagem <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../cenarios/cenarios-1_0/">Cenários 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../cenarios/cenarios/">Cenários 0.1</a>
+</li>
+                                    
+<li >
+    <a href="../lexicos/lexicos-1_0/">Léxicos 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../lexicos/lexicos/">Léxicos 0.1</a>
+</li>
+                                    
+<li >
+    <a href="../use_cases_specifications/user_case_geral/">Caso de uso - Geral</a>
+</li>
+                                    
+<li >
+    <a href="../use_cases_specifications/trending_topics/">Caso de uso - Trending Topics</a>
+</li>
+                                    
+<li >
+    <a href="../use_cases_specifications/login/">Caso de uso - Login</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Backlog do produto</a>
+</li>
+                                    
+<li >
+    <a href="../NFR/nfr_diagramas/">NFR</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Análise <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../analise/definicao/">Definição</a>
+</li>
+                                    
+<li >
+    <a href="../../analise/inspecao_rich_picture/">Inspeção RichPicture - Template</a>
+</li>
+                                    
+<li >
+    <a href="../../analise/inspecao_moscow_requisitos/">Inspeção - MoSCoW e Requisitos</a>
+</li>
+                                    
+<li >
+    <a href="../../analise/inspecao_entrevistas/">Inspeção - Entrevistas</a>
+</li>
+                                    
+<li >
+    <a href="../../analise/inspecao_backlog_produto/">Inspeção - Backlog do Produto</a>
+</li>
+                                    
+<li >
+    <a href="../../analise/inspecao_nfr/">Inspeção - NFR</a>
+</li>
+                                    
+<li >
+    <a href="../../analise/inspecao_cenarios/">Inspeção - Cenários</a>
+</li>
+                                    
+<li >
+    <a href="../../analise/inspecao_lexicos/">Inspeção - Léxicos</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Outros artefatos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../outros_artefatos/PDCA/">PDCA</a>
+</li>
+                                    
+<li >
+    <a href="../../outros_artefatos/5w2h/">5W2H</a>
+</li>
+                                    
+<li >
+    <a href="../../outros_artefatos/swot/">SWOT</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../use_cases_specifications/login/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../NFR/nfr_diagramas/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Requisitos2-2019/Twitter/edit/master/docs/modelagem/backlog_do_produto.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#backlog-do-produto">Backlog do produto</a></li>
+            <li><a href="#descricao">Descrição</a></li>
+            <li><a href="#tabela-do-backlog">Tabela do backlog</a></li>
+            <li><a href="#lista-das-historias-de-usuario">Lista das Histórias de usuário</a></li>
+            <li><a href="#referencias">Referências</a></li>
+            <li><a href="#versionamento-de-edicoes-desta-pagina">Versionamento de edições desta página</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><span style="margin-left: 40%;"><img alt="Twitter Logo" src="../../images/twitter-logo-100px.png" /></span></p>
+<hr />
+<h1 id="backlog-do-produto">Backlog do produto</h1>
+<hr />
+<h2 id="descricao">Descrição</h2>
+<p>Este Backlog consiste em uma lista que descreve todas as funcionalidades desejadas para o Twitter. Com a finalidade de obtermos uma melhor especificação dessas funcionalidades, este Backlog apresenta a os seguintes itens de granularidade:</p>
+<ul>
+<li><strong>Épico</strong> que pode englobar várias Histórias de usuário;</li>
+<li><strong>ID</strong> da História de usuário (ou US - User history);</li>
+<li>Descrição da História de usuário com as colunas:<ul>
+<li><strong>Eu como</strong>...;</li>
+<li><strong>Desejo</strong>...;</li>
+<li><strong>Para que eu possa</strong>...;</li>
+</ul>
+</li>
+<li><strong>Tarefas</strong> para o desenvolvimento de cada funcionalidade;</li>
+<li><strong>Critérios de aceitação</strong> para a validação de cada História de usuário.</li>
+</ul>
+<hr />
+<h2 id="tabela-do-backlog">Tabela do backlog</h2>
+<table>
+<thead>
+<tr>
+<th>Épico</th>
+<th>ID</th>
+<th>Eu como</th>
+<th>Desejo</th>
+<th>Para que eu possa</th>
+<th>Critérios de aceitação</th>
+<th>Rastro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cadastro</td>
+<td><a href="#US01"><strong>[US01]</strong></a></td>
+<td>Visitante</td>
+<td>Realizar cadastro</td>
+<td>Me tornar um usuário do Twitter.</td>
+<td><a href="#US01"><strong>Link para a [US01]</strong></a></td>
+<td><a href="../use_cases_specifications/user_case_geral/#UC02"><strong>UC02;</strong></a> <a href="../use_cases_specifications/login/"><strong>Caso de uso - Login;</strong></a> <a href="../../elicitacao/requisitos/#R030"><strong>R030;</strong></a></td>
+</tr>
+<tr>
+<td>Central de ajuda</td>
+<td><a href="#US02"><strong>[US02]</strong></a></td>
+<td>Usuário</td>
+<td>Acessar a central de ajuda</td>
+<td>Sanar dúvidas sobre o funcionamento e a utilização do Twitter.</td>
+<td><a href="#US02"><strong>Link para a [US02]</strong></a></td>
+<td><a href="../use_cases_specifications/user_case_geral/#UC20"><strong>UC20;</strong></a> <a href="../../elicitacao/storytelling/#storytelling01"><strong>Storytelling 01;</strong></a></td>
+</tr>
+<tr>
+<td>Gerenciar perfil</td>
+<td><a href="#US03"><strong>[US03]</strong></a></td>
+<td>Usuário</td>
+<td>poder trocar minha foto de perfil</td>
+<td>passar uma imagem sobre mim da maneira que eu preferir</td>
+<td><a href="#US03"><strong>Link para a [US03]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R030"><strong>R002</strong></a></td>
+</tr>
+<tr>
+<td>Gerenciar perfil</td>
+<td><a href="#US04"><strong>[US04]</strong></a></td>
+<td>Usuário</td>
+<td>poder escolher outro nome de usuário (@)</td>
+<td>para que eu tenha uma identificação única no Twitter</td>
+<td><a href="#US04"><strong>Link para a [US04]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R031"><strong>R031</strong></a></td>
+</tr>
+<tr>
+<td>Gerenciar perfil</td>
+<td><a href="#US05"><strong>[US05]</strong></a></td>
+<td>Usuário</td>
+<td>ter uma descrição de perfil e que esta seja editável</td>
+<td>para que eu possa dizer aos outros usuários o que eu desejo que saibam sobre mim em poucas palavras</td>
+<td><a href="#US05"><strong>Link para a [US05]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R002"><strong>R002</strong></a></td>
+</tr>
+<tr>
+<td>Gerenciar perfil</td>
+<td><a href="#US06"><strong>[US06]</strong></a></td>
+<td>Usuário</td>
+<td>ter controle sobre quais usuários podem visualizar minhas informações (dados do perfil, tweets etc)</td>
+<td>me sentir seguro em relação à confidencialidade dos meus dados</td>
+<td><a href="#US06"><strong>Link para a [US06]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R020"><strong>R020</strong></a> ; <a href="../../elicitacao/requisitos/#R005"><strong>R005</strong></a></td>
+</tr>
+<tr>
+<td>Pesquisa</td>
+<td><a href="#US07"><strong>[US07]</strong></a></td>
+<td>Usuário</td>
+<td>buscar qualquer termo na barra de pesquisa</td>
+<td>encontrar qualquer assunto ou tópico do meu interesse</td>
+<td><a href="#US07"><strong>Link para a [US07]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R025"><strong>R025</strong></a> ; <a href="../use_cases_specifications/user_case_geral/#UC10"><strong>UC10;</strong></a></td>
+</tr>
+<tr>
+<td>Pesquisa</td>
+<td><a href="#US08"><strong>[US08]</strong></a></td>
+<td>Usuário</td>
+<td>buscar uma hashtag na barra de pesquisa</td>
+<td>me atualizar a respeito dos tópicos mais em alta</td>
+<td><a href="#US08"><strong>Link para a [US08]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R025"><strong>R025</strong></a> ; <a href="../use_cases_specifications/user_case_geral/#UC11"><strong>UC11;</strong></a></td>
+</tr>
+<tr>
+<td>Pesquisa</td>
+<td><a href="#US09"><strong>[US09]</strong></a></td>
+<td>Usuário</td>
+<td>conferir tópicos sugeridos baseados no meu interesse na barra de pesquisa</td>
+<td>ter mais celeridade em buscas</td>
+<td><a href="#US09"><strong>Link para a [US09]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R025"><strong>R025</strong></a> ; <a href="../use_cases_specifications/user_case_geral/#UC12"><strong>UC12;</strong></a></td>
+</tr>
+<tr>
+<td>Notificações</td>
+<td><a href="#US10"><strong>[US10]</strong></a></td>
+<td>Usuário</td>
+<td>Receber notificações de interações</td>
+<td>Interagir com as pessoas</td>
+<td><a href="#US10"><strong>Link para a [US10]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R010"><strong>R010</strong></a> ; <a href="../use_cases_specifications/user_case_geral/#UC14"><strong>UC14;</strong></a></td>
+</tr>
+<tr>
+<td>Notificações</td>
+<td><a href="#US11"><strong>[US11]</strong></a></td>
+<td>Usuário</td>
+<td>Receber notificações de sugestão de conteúdo</td>
+<td>Ficar por dentro dos assuntos do twitter</td>
+<td><a href="#US11"><strong>Link para a [US11]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R011"><strong>R011</strong></a> ; <a href="../use_cases_specifications/user_case_geral/#UC14"><strong>UC14;</strong></a></td>
+</tr>
+<tr>
+<td>Notificações</td>
+<td><a href="#US12"><strong>[US12]</strong></a></td>
+<td>Usuário</td>
+<td>Receber notificações de mensagens</td>
+<td>Responder as mesagens</td>
+<td><a href="#US12"><strong>Link para a [US12]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R029"><strong>R029</strong></a> ; <a href="../use_cases_specifications/user_case_geral/#UC14"><strong>UC14;</strong></a></td>
+</tr>
+<tr>
+<td>Tweet</td>
+<td><a href="#US13"><strong>[US13]</strong></a></td>
+<td>Usuário</td>
+<td>ser capaz de twittar posts através de caracteres e/ou outros tipos mídias</td>
+<td>expressar/opinar</td>
+<td><a href="#US13"><strong>Link para a [US13]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R032"><strong>R032</strong></a> ; <a href="../use_cases_specifications/user_case_geral/#UC18"><strong>UC18;</strong></a></td>
+</tr>
+<tr>
+<td>Tweet</td>
+<td><a href="#US14"><strong>[US14]</strong></a></td>
+<td>Usuário</td>
+<td>reportar/denunciar tweets que detenham conteúdos que ferem as diretrizes do Twitter</td>
+<td>retirar conteúdos que afetam negativamentos outros usuários</td>
+<td><a href="#US14"><strong>Link para a [US14]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R033"><strong>R033</strong></a> ; <a href="../use_cases_specifications/user_case_geral/#UC13"><strong>UC13;</strong></a></td>
+</tr>
+<tr>
+<td>Tweet</td>
+<td><a href="#US15"><strong>[US15]</strong></a></td>
+<td>Usuário</td>
+<td>Compartilhar tweets de outros usuários</td>
+<td>divulgar/dividir com outras pessoas o conteúdo em questão</td>
+<td><a href="#US15"><strong>Link para a [US15]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R023"><strong>R023</strong></a> ; <a href="../use_cases_specifications/user_case_geral/#UC06"><strong>UC06;</strong></a></td>
+</tr>
+<tr>
+<td>Interagir Com Outro usuário</td>
+<td><a href="#US16"><strong>[US16]</strong></a></td>
+<td>Usuário</td>
+<td>Enviar mensagens diretas</td>
+<td>comunicar no privado através de mensagens</td>
+<td><a href="#US16"><strong>Link para a [US16]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R06"><strong>R006</strong></a> ; <a href="../../elicitacao/requisitos/#R29"><strong>R029</strong></a></td>
+</tr>
+<tr>
+<td>Interagir Com Outro usuário</td>
+<td><a href="#US17"><strong>[US17]</strong></a></td>
+<td>Usuário</td>
+<td>Mencionar outros usuários</td>
+<td>comunicar-se publicamente através de menções em tweets</td>
+<td><a href="#US17"><strong>Link para a [US17]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R06"><strong>R006</strong></a></td>
+</tr>
+<tr>
+<td>Interagir Com Outro usuário</td>
+<td><a href="#US18"><strong>[US18]</strong></a></td>
+<td>Usuário</td>
+<td>curtir ou comentar o tweet de outro usuário</td>
+<td>comunicar através de símbolos da plataforma</td>
+<td><a href="#US18"><strong>Link para a [US18]</strong></a></td>
+<td><a href="../../elicitacao/requisitos/#R06"><strong>R006</strong></a> ; <a href="../../elicitacao/requisitos/#R08"><strong>R008</strong></a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="lista-das-historias-de-usuario">Lista das Histórias de usuário</h2>
+<p><span id="US01"></span></p>
+<h3 id="us01-eu-como-visitante-desejo-realizar-cadastro"><a href="#US01"><strong>[US01]</strong></a> Eu, como visitante, desejo realizar cadastro.</h3>
+<p><strong>Autor: Aline</strong></p>
+<h4 id="criterios-de-aceitacao">Critérios de aceitação:</h4>
+<ul>
+<li>Ter uma página de cadastro para o Twitter;</li>
+<li>Ter uma integração e uma validação do número de telefone do visitante com a conta a ser criada;</li>
+<li>Ter uma integração e uma validação a partir do email do visitante com a conta a ser criada;</li>
+<li>Exigir que o visitante crie uma senha ;</li>
+<li>Definir critérios de segurança para a criação da senha ;</li>
+<li>Validar a senha criada ;</li>
+<li>Ter um cadastro do nome usuário único para a conta a ser criada.</li>
+<li>O visitante deve ser capaz de acessar a página de cadastro do Twitter;</li>
+<li>O visitante deve conseguir validar o seu número de celular inserindo um código de confirmação enviado pelo Twitter por SMS;</li>
+<li>Após a validação, o visitante é redirecionado para a sua conta de usuário do Twitter;</li>
+<li>Após a validação, o visitante consegue inserir o seu nome de usuário para a sua conta do Twitter.</li>
+</ul>
+<p><span id="US02"></span></p>
+<h3 id="us02-eu-como-usuario-desejo-acessar-a-central-de-ajuda"><a href="#US02"><strong>[US02]</strong></a> Eu, como usuário, desejo acessar a central de ajuda.</h3>
+<p><strong>Autor: Aline</strong></p>
+<h4 id="criterios-de-aceitacao_1">Critérios de aceitação:</h4>
+<ul>
+<li>O usuário deve ser capaz de acessar a página de Central de ajuda;</li>
+<li>Caso exista(m) resultado(s), a barra de pesquisa retorna resultado(s) da Central de ajuda de acordo com a pesquisa feita pelo usuário.</li>
+<li>Ter uma página para a Central de ajuda;</li>
+<li>A barra de pesquisa de dúvidas deve estar na página de Central de ajuda;</li>
+</ul>
+<p><span id="US03"></span></p>
+<h3 id="us03-eu-como-usuario-desejo-poder-trocar-minha-foto-de-perfil"><a href="#US03"><strong>[US03]</strong></a> Eu, como usuário, desejo poder trocar minha foto de perfil.</h3>
+<p><strong>Autor: Erick</strong></p>
+<h4 id="criterios-de-aceitacao_2">Critérios de aceitação:</h4>
+<ul>
+<li>A opção de ter uma foto de perfil deve existir ;</li>
+<li>O usuário pode mudar a foto no momento que quiser ;</li>
+<li>Outros usuários não podem mudar a foto de perfil que não seja a deles mesmos ;</li>
+<li>Ao mudar a foto de perfil, um <a href="../lexicos/lexicos-1_0/#lxTweet">Tweet</a> deve ser automaticamente postado pelo sistema ;</li>
+<li>Definir um critério sobre o tamanho da foto adicionada, em megabytes ;</li>
+<li>Permitir que o usuário fique sem foto de perfil, por quanto tempo ele desejar ;</li>
+<li>Permitir que o usuário tire uma foto, a partir do Twitter, para adicioná-la como foto de perfil ;</li>
+<li>Permitir que o usuário, por meio do Twitter, acesse a galeria de fotos do celular dele e escolha uma foto de perfil ;</li>
+<li>Validar a foto escolhida pelo usuário para que ela não ultrapasse o tamanho permitido ;</li>
+<li>Validar a foto escolhida pelo usuário para que ela não tenha conteúdo violento, sexual ou de apologia ao uso ou ao tráfico de drogas</li>
+</ul>
+<p><span id="US04"></span></p>
+<h3 id="us04-eu-como-usuario-desejo-poder-escolher-outro-nome-de-usuario"><a href="#US04"><strong>[US04]</strong></a> Eu, como usuário, desejo poder escolher outro nome de usuário (@).</h3>
+<p><strong>Autor: Erick</strong></p>
+<h4 id="criterios-de-aceitacao_3">Critérios de aceitação:</h4>
+<ul>
+<li>A opção de ter um nome de usuário deve existir ;</li>
+<li>O usuário pode mudar o nome dele (@) a qualquer instante ;</li>
+<li>O sistema deve verificar se o nome escolhido pelo usuário está disponível ;</li>
+<li>O nome de usuário deve aparecer logo abaixo da foto de perfil ;</li>
+</ul>
+<p><span id="US05"></span></p>
+<h3 id="us05-eu-como-usuario-desejo-ter-uma-descricao-de-perfil-e-que-esta-seja-editavel"><a href="#US05"><strong>[US05]</strong></a> Eu, como usuário, desejo ter uma descrição de perfil e que esta seja editável.</h3>
+<p><strong>Autor: Erick</strong></p>
+<h4 id="criterios-de-aceitacao_4">Critérios de aceitação:</h4>
+<ul>
+<li>A opção de ter uma descrição de perfil deve existir ;</li>
+<li>A descrição de perfil não pode ultrapassar 160 caracteres ;</li>
+<li>A descrição de perfil deve ser visível para qualquer outro usuário, mesmo que este não siga o perfil em questão;</li>
+<li>A descrição de perfil deve estar localizada abaixo do nome de usuário ;</li>
+<li>A descrição de perfil pode ser vazia ;</li>
+<li>Bio deve ser uma outra maneira de falar "Descrição de perfil" ;</li>
+</ul>
+<p><span id="US06"></span></p>
+<h3 id="us06-eu-como-usuario-desejo-ter-controle-sobre-quais-usuarios-podem-visualizar-minhas-informacoes-dados-do-perfil-tweets-etc"><a href="#US06"><strong>[US06]</strong></a> Eu, como usuário, desejo ter controle sobre quais usuários podem visualizar minhas informações (dados do perfil, tweets etc).</h3>
+<p><strong>Autor: Erick</strong></p>
+<h4 id="criterios-de-aceitacao_5">Critérios de aceitação:</h4>
+<ul>
+<li>O usuário pode bloquear outro usuário ;</li>
+<li>O usuário pode escolher, dentre as informações do perfil dele, quais são públicas (visíveis a todos) e quais são privadas (visíveis apenas para aqueles que o seguem) ;</li>
+<li>O usuário deve ser capaz de escolher se o perfil dele será "público" ou "privado";</li>
+<li>O usuário pode mudar, a qualquer instante, a confidencialidade do perfil dele como um todo (para "público" ou para "privado") ;</li>
+<li>O usuário pode desbloquear outro usuário que estava outrora bloqueado.</li>
+</ul>
+<p><span id="US07"></span></p>
+<h3 id="us07-eu-como-usuario-desejo-buscar-qualquer-termo-na-barra-de-pesquisa"><a href="#US07"><strong>[US07]</strong></a> Eu, como usuário, desejo buscar qualquer termo na barra de pesquisa</h3>
+<p><strong>Autor: Eugênio</strong></p>
+<h4 id="criterios-de-aceitacao_6">Critérios de aceitação:</h4>
+<ul>
+<li>O usuário pode inserir um texto de no máximo 500 caracteres ;</li>
+<li>O usuário pode cometer erros de digitação ;</li>
+<li>O usuário deve encontrar tópicos sugeridos ;</li>
+<li>A barra de pesquisa deve existir ;</li>
+<li>A busca pode ser feita por hashtags ;</li>
+<li>A busca pode ser feita utilizando números ;</li>
+<li>A busca pode ser por @ (nome de usuário, com ou sem @) ;</li>
+<li>Analisar o texto digitado na barra de pesquisa para que não seja um código malicioso ;</li>
+</ul>
+<p><span id="US08"></span></p>
+<h3 id="us08-eu-como-usuario-desejo-buscar-uma-hashtag-na-barra-de-pesquisa"><a href="#US08"><strong>[US08]</strong></a> Eu, como usuário, desejo buscar uma hashtag na barra de pesquisa</h3>
+<p><strong>Autor: Eugênio</strong></p>
+<h4 id="criterios-de-aceitacao_7">Critérios de aceitação:</h4>
+<ul>
+<li>O usuário pode inserir uma hashtag de no máximo 100 caracteres</li>
+<li>O usuário pode cometer erros de digitação e deve encontrar hashtags sugeridas</li>
+<li>O usuário deve visulizar as hashtags com maior engajamento de forma ordenada</li>
+<li>O usuário pode filtrar a localização de busca da hashtag</li>
+</ul>
+<p><span id="US09"></span></p>
+<h3 id="us09-eu-como-usuario-desejo-conferir-topicos-sugeridos-baseados-no-meu-interesse-na-barra-de-pesquisa"><a href="#US09"><strong>[US09]</strong></a> Eu, como usuário, desejo conferir tópicos sugeridos baseados no meu interesse na barra de pesquisa</h3>
+<p><strong>Autor: Eugênio</strong></p>
+<h4 id="criterios-de-aceitacao_8">Critérios de aceitação:</h4>
+<ul>
+<li>O usuário deve visualizar tópicos similares sugeridos ao buscados na barra de pesquisa</li>
+<li>O usuário pode clicar em um tópico sugerido e ser redirecionado para o mesmo</li>
+</ul>
+<p><span id="US10"></span></p>
+<h3 id="us10-eu-como-usuario-desejo-receber-notificacoes-de-interacoes"><a href="#US10"><strong>[US10]</strong></a> Eu, como usuário, desejo receber notificações de interações</h3>
+<p><strong>Autor: Lorrany</strong></p>
+<h4 id="criterios-de-aceitacao_9">Critérios de aceitação:</h4>
+<ul>
+<li>O usuário recebe notificações do app na tela de seu celular ;</li>
+<li>O usuário deve poder ver se interação foi um retweet, uma curtida, uma menção em comentário, uma resposta a comentário ;</li>
+<li>O usuário deve poder escolher silenciar essas notificações caso queria;</li>
+</ul>
+<p><span id="US11"></span></p>
+<h3 id="us11-eu-como-usuario-desejo-receber-notificacoes-de-sugestao-de-conteudo"><a href="#US11"><strong>[US11]</strong></a> Eu, como usuário, desejo receber notificações de sugestão de conteúdo</h3>
+<p><strong>Autor: Lorrany</strong></p>
+<h4 id="criterios-de-aceitacao_10">Critérios de aceitação:</h4>
+<ul>
+<li>O usuário recebe notificações do app na tela de seu celular ;</li>
+<li>O usuário deve conseguir visualizar previamente o conteúdo sugerido ;</li>
+<li>O usuário deve poder escolher desativar as notificações de sugestão;</li>
+<li>O usuário deve poder reclamar caso o app sugira algo que incomode.</li>
+</ul>
+<p><span id="US12"></span></p>
+<h3 id="us12-eu-como-usuario-desejo-receber-notificacoes-de-mensagens"><a href="#US12"><strong>[US12]</strong></a> Eu, como usuário, desejo receber notificações de mensagens</h3>
+<p><strong>Autor: Lorrany</strong></p>
+<h4 id="criterios-de-aceitacao_11">Critérios de aceitação:</h4>
+<ul>
+<li>O usuário recebe notificações do app na tela de seu celular ;</li>
+<li>O usuário deve conseguir visualizar previamente o conteúdo da mensagem ;</li>
+<li>O usuário deve conseguir desativar a opção de visualizar previamente o conteúdo da mensagem ;</li>
+<li>O usuário deve poder escolher desativar as notificações;</li>
+</ul>
+<p><span id="US13"></span></p>
+<h3 id="us13-eu-como-usuario-desejo-ser-capaz-de-twittarcompartilhar-posts-atraves-de-caracteres-eou-outros-tipos-midias"><a href="#US13"><strong>[US13]</strong></a> Eu, como usuário, desejo ser capaz de twittar(compartilhar) posts através de caracteres e/ou outros tipos mídias</h3>
+<p><strong>Autor: Bruno</strong></p>
+<h4 id="criterios-de-aceitacao_12">Critérios de Aceitação:</h4>
+<ul>
+<li>O usuário deve ser capaz de postar conteúdos em diferentes tipos de mídia;</li>
+<li>O usuários pode deletar suas próprias postagens;</li>
+<li>Sistema de upload simples e eficiente;</li>
+<li>O sistema de upload deve possuir compatibilidade com os diversos formatos de mídia.</li>
+</ul>
+<p><span id="US14"></span></p>
+<h3 id="us14-eu-como-usuario-desejo-reportardenunciar-tweets-que-detenham-conteudos-que-ferem-as-diretrizes-do-twitter"><a href="#US14"><strong>[US14]</strong></a> Eu, como usuário, desejo reportar/denunciar tweets que detenham conteúdos que ferem as diretrizes do Twitter</h3>
+<p><strong>Autor: Bruno</strong></p>
+<h4 id="criterios-de-aceitacao_13">Critérios de Aceitação:</h4>
+<ul>
+<li>Sistema capaz de julgar a gravidade do tweet(se houver);</li>
+<li>Ponderações de contexto do tweet com base em fatos e vertentes do contexto.</li>
+<li>Funcionalidade capaz de denunciar o conteúdo a partir do tweet base.</li>
+</ul>
+<p><span id="US15"></span></p>
+<h3 id="us15-eu-como-usuario-desejo-compartilhar-tweets-de-outros-usuarios"><a href="#US15"><strong>[US15]</strong></a> Eu, como usuário, desejo Compartilhar tweets de outros usuários</h3>
+<p><strong>Autor: Fernando</strong></p>
+<h4 id="criterios-de-aceitacao_14">Critérios de Aceitação:</h4>
+<ul>
+<li>Possibilitar o usuário ter acesso a um link chave de um detrminado tweet.</li>
+<li>Opção capaz de oferecer link externo para divulgar o tweet;</li>
+</ul>
+<p><span id="US016"></span></p>
+<h3 id="us016-eu-como-usuario-desejo-enviar-mensagens-diretas-para-outro-usuario"><a href="#US016"><strong>[US016]</strong></a> Eu, como usuário, desejo enviar mensagens diretas para outro usuário</h3>
+<p><strong>Autor: Fernando</strong></p>
+<h4 id="criterios-de-aceitacao_15">Critérios de aceitação:</h4>
+<ul>
+<li>O usuário pode escolher uma mensagem entre as existentes ou iniciar uma nova.</li>
+<li>O usuário pode enviar imagens ou gifs para outro usuário.</li>
+<li>O usuário pode excluir a mensagem do seu perfil mas esta ainda estará disponível para o outro usuário.</li>
+</ul>
+<p><span id="US017"></span></p>
+<h3 id="us017-eu-como-usuario-desejo-mencionar-outro-usuario-em-um-tweet"><a href="#US017"><strong>[US017]</strong></a> Eu, como usuário, desejo mencionar outro usuário em um tweet</h3>
+<p><strong>Autor: Fernando</strong></p>
+<h4 id="criterios-de-aceitacao_16">Critérios de aceitação:</h4>
+<ul>
+<li>O usuário pode enviar tweets públicos para outro usuário utilizando o seu handler (@)</li>
+<li>O usuário pode enviar imagens ou gifs ou mencionar outro usuário em um comentário</li>
+<li>Qualquer usuário pode enviar mensagens publicamente para outra pessoa</li>
+<li>Ao fazer a menção a outro usuário, este deve existir (o sistema deve verificá-lo)</li>
+<li>O usuário que foi mencionado pode reportar a menção</li>
+<li>O usuário mencinado pode reportar o outro usuário em relação à menção</li>
+<li>Se o tweet for excluído, a menção não pode existir mais, ela deve ser excluída também, pelo sistema </li>
+</ul>
+<p><span id="US018"></span></p>
+<h3 id="us018-eu-como-usuario-desejo-curtir-ou-comentar-o-tweet-de-outro-usuario"><a href="#US018"><strong>[US018]</strong></a> Eu, como usuário, desejo curtir ou comentar o tweet de outro usuário</h3>
+<p><strong>Autor: Fernando</strong></p>
+<h4 id="criterios-de-aceitacao_17">Critérios de aceitação:</h4>
+<ul>
+<li>O usuário pode dar like</li>
+<li>O usuário pode interagir com outro usuário ao comentar em um tweet do mesmo</li>
+</ul>
+<hr />
+<h2 id="referencias">Referências</h2>
+<ol>
+<li><strong>[Ebrary]</strong> Young, Ralph. Requirements Engineering Handbook. Norwood, US:
+Artech House Books, 2003.</li>
+<li><strong>[Open Access]</strong> Leite, Julio Cesar Sampaio do Prado. Livro Vivo - Engenharia de
+Requisitos. <a href="http://livrodeengenhariaderequisitos.blogspot.com.br/"><strong>http://livrodeengenhariaderequisitos.blogspot.com.br/</strong></a> (último acesso:
+2019)</li>
+</ol>
+<hr />
+<h2 id="versionamento-de-edicoes-desta-pagina">Versionamento de edições desta página</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Autor</th>
+<th>Descrição</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20/10/2019</td>
+<td>Aline Laureano</td>
+<td>Criação da página e dos textos descritivos, adição de algumas referências &amp; inserção das US's relacionadas ao épico Cadastro e ao épico Central de ajuda com os links necessários.</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>21/10/2019</td>
+<td>Erick Giffoni</td>
+<td>Adição das USs referentes ao épico Gerenciar Perfil e algumas correções</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>21/10/2019</td>
+<td>Eugênio Sales</td>
+<td>Adição das USs referentes ao épico de Pesquisa</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>21/10/2019</td>
+<td>Lorrany Azevedo</td>
+<td>Adição das do épico notificações e US</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>21/10/2019</td>
+<td>Bruno Duarte</td>
+<td>Adicionando Épicos e US sobre Tweet</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>21/10/2019</td>
+<td>Fernando Aguilar</td>
+<td>Adicionando Épicos e US sobre Interagir com outro usuário</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>22/10/2019</td>
+<td>Erick Giffoni</td>
+<td>Adição dos autores de cada US</td>
+<td>0.6.1</td>
+</tr>
+<tr>
+<td>04/11/2019</td>
+<td>Erick Giffoni</td>
+<td>Refatoração do Backlog conforme parecer técnico da inspeção realizada</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

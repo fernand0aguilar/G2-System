@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Cenários 1.0 - Twitter Requirements</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Twitter Requirements</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pŕe-rastreabilidade <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../pre-rastreabilidade/richpicture/">RichPicture</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elicitação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../elicitacao/entrevistas/entrevistas/">Entrevistas</a>
+</li>
+                                    
+<li >
+    <a href="../../../elicitacao/storytelling/">Storytelling</a>
+</li>
+                                    
+<li >
+    <a href="../../../elicitacao/requisitos/">Requisitos & MoSCoW</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modelagem <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="./">Cenários 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../cenarios/">Cenários 0.1</a>
+</li>
+                                    
+<li >
+    <a href="../../lexicos/lexicos-1_0/">Léxicos 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../../lexicos/lexicos/">Léxicos 0.1</a>
+</li>
+                                    
+<li >
+    <a href="../../use_cases_specifications/user_case_geral/">Caso de uso - Geral</a>
+</li>
+                                    
+<li >
+    <a href="../../use_cases_specifications/trending_topics/">Caso de uso - Trending Topics</a>
+</li>
+                                    
+<li >
+    <a href="../../use_cases_specifications/login/">Caso de uso - Login</a>
+</li>
+                                    
+<li >
+    <a href="../../backlog_do_produto/">Backlog do produto</a>
+</li>
+                                    
+<li >
+    <a href="../../NFR/nfr_diagramas/">NFR</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Análise <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../analise/definicao/">Definição</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_rich_picture/">Inspeção RichPicture - Template</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_moscow_requisitos/">Inspeção - MoSCoW e Requisitos</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_entrevistas/">Inspeção - Entrevistas</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_backlog_produto/">Inspeção - Backlog do Produto</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_nfr/">Inspeção - NFR</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_cenarios/">Inspeção - Cenários</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_lexicos/">Inspeção - Léxicos</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Outros artefatos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../outros_artefatos/PDCA/">PDCA</a>
+</li>
+                                    
+<li >
+    <a href="../../../outros_artefatos/5w2h/">5W2H</a>
+</li>
+                                    
+<li >
+    <a href="../../../outros_artefatos/swot/">SWOT</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../../elicitacao/requisitos/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../cenarios/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Requisitos2-2019/Twitter/edit/master/docs/modelagem/cenarios/cenarios-1_0.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#cenarios-10">Cenários 1.0</a></li>
+        <li class="main "><a href="#alguns-cenarios-para-o-app-twitter">Alguns cenários para o app Twitter</a></li>
+            <li><a href="#trending-topics">Trending</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#enviar-mensagem">Enviar Mensagem</a></li>
+            <li><a href="#criar-tweets">Criar Tweets</a></li>
+            <li><a href="#explorar">Explorar</a></li>
+            <li><a href="#comentar-tweets">Comentar Tweets</a></li>
+            <li><a href="#versionamento-de-edicoes-desta-pagina">Versionamento de edições desta página</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><span style="margin-left: 40%;"><img alt="Twitter Logo" src="../../../images/twitter-logo-100px.png" /></span></p>
+<hr />
+<h1 id="cenarios-10">Cenários 1.0</h1>
+<p>Esta página apresenta a última versão de todos os cenários modelados para este projeto com o app <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">Twitter</a></strong>.</br></p>
+<p>Um cenário é uma estratégia reconhecida para compreender as interações entre ambiente e sistema, bem como elicitar a parte comportamental do software, sua dinâmica e/ou seu fluxo.</p>
+<p>Agora os cenários desta página se apresentam em um formato de tabela com cada ocorrência de léxico sendo um <strong><em><a href"#">link</a></em></strong> para a sua definição.</p>
+<hr />
+<h1 id="alguns-cenarios-para-o-app-twitter">Alguns cenários para o app <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">Twitter</a></strong></h1>
+<h3 id="trending-topics"><strong><a href="../../lexicos/lexicos-1_0/#lxTrending">Trending</a></strong> Topics</h3>
+<p><strong>Autor</strong> : Erick Giffoni </br>
+<strong>Versão:</strong> 0.2 </br></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Titulo:</strong></td>
+<td><strong><a href="../../lexicos/lexicos-1_0/#lxTrending">trending</a></strong> topics</td>
+</tr>
+<tr>
+<td><strong>Objetivo:</strong></td>
+<td>Acompanhar quais são os assuntos mais falados no <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong> em determinado momento.</td>
+</tr>
+<tr>
+<td><strong>Contexto:</strong></td>
+<td>Navegação no app <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong></td>
+</tr>
+<tr>
+<td><strong>Atores:</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Recursos:</strong></td>
+<td>- Servidores do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong> devem estar funcionando;</br>- Outros usuários precisam estar falando sobre algum assunto em comum;</br>- Usuário deve acessar o app <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>;</br>- Usuários devem usar uma palavra-chave sobre o assunto ou uma <strong><a href="../../lexicos/lexicos-1_0/#lxHashtag">hashtag</a></strong> (#) para identificar o tema do assunto.</td>
+</tr>
+<tr>
+<td><strong>Exceção:</strong></td>
+<td>- App não abre;</br>- Usuário tem o celular roubado;</br>- Não há assuntos sendo discutidos no momento;</br>- Servidores do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong> param de funcionar.</td>
+</tr>
+<tr>
+<td><strong>Episódios:</strong></td>
+<td>- Usuário abre o app <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>;</br>- Usuário clica no ícone de pesquisa;</br>- Usuário seleciona "<strong><a href="../../lexicos/lexicos-1_0/#lxTrending">trending</a></strong>";</br>- Usuário escolhe um dos assuntos e acompanha os <strong><a href="../../lexicos/lexicos-1_0/#lxTweet">tweets</a></strong>;</br>- Usuário pesquisa um assunto;</br>- Usuário pesquisa uma <strong><a href="../../lexicos/lexicos-1_0/#lxHashtag">hashtag</a></strong>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="login"><strong><a href="../../lexicos/lexicos-1_0/#lxLogin">Login</a></strong></h3>
+<p><strong>Autor</strong> : Bruno Duarte </br>
+<strong>Versão:</strong> 0.2  </br></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Titulo:</strong></td>
+<td><strong><a href="../../lexicos/lexicos-1_0/#lxLogin">Login</a></strong></td>
+</tr>
+<tr>
+<td><strong>Objetivo:</strong></td>
+<td>Autenticar e possibilitar o acesso a plataforma do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>.</td>
+</tr>
+<tr>
+<td><strong>Contexto:</strong></td>
+<td>Contato inicial com a aplicação.</td>
+</tr>
+<tr>
+<td><strong>Atores:</strong></td>
+<td>Usuário, Sistema</td>
+</tr>
+<tr>
+<td><strong>Recursos:</strong></td>
+<td>- Acesso a Internet;</br>- Email ou Telefone Móvel;</br>- Aplicativo do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong> ou Desktop.</td>
+</tr>
+<tr>
+<td><strong>Exceção:</strong></td>
+<td>- Sem acesso a Internet;</br>- Baixa nos Servidores da Aplicação;</br>- Aplicativo restringido.</td>
+</tr>
+<tr>
+<td><strong>Episódios:</strong></td>
+<td>- Usuário baixa o aplicativo;</br>- O usuário cede suas credenciais;</br>- O sistema autentica as informações do usuário;</br>- O usuário consegue acesso a plataforma e todas as suas funcionalidades.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="enviar-mensagem">Enviar Mensagem</h3>
+<p><strong>Autor</strong> : Eugênio Sales </br>
+<strong>Versão:</strong> 0.2  </br></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Titulo:</strong></td>
+<td>enviar mensagem</td>
+</tr>
+<tr>
+<td><strong>Objetivo:</strong></td>
+<td>Comunicar-se diretamente com outro usuário do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong></td>
+</tr>
+<tr>
+<td><strong>Contexto:</strong></td>
+<td>Privacidade na comunicação</td>
+</tr>
+<tr>
+<td><strong>Atores:</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Recursos:</strong></td>
+<td>- Outro usuário deve ser encontrado na barra de pesquisa;</br>- Internet;</br>- O usuário deve estar logado em sua conta.</td>
+</tr>
+<tr>
+<td><strong>Exceção:</strong></td>
+<td>- A internet cair durante o serviço;</br>- Um usuário bloquear o outro.</td>
+</tr>
+<tr>
+<td><strong>Episódios:</strong></td>
+<td>- O usuário abre o app <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>;</br>- Usuário clica no ícone de mensagem;</br>- Usuário abre a barra de pesquisa para encontrar outro usuário;</br>- Usuário escolhe o outro;</br>- Usuário envia a mensagem.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="criar-tweets">Criar <strong><a href="../../lexicos/lexicos-1_0/#lxTweet">Tweets</a></strong></h3>
+<p><strong>Autor</strong> : Lorrany Azevedo </br>
+<strong>Versão:</strong> 0.2  </br></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Titulo:</strong></td>
+<td>criar <strong><a href="../../lexicos/lexicos-1_0/#lxTweet">tweets</a></strong></td>
+</tr>
+<tr>
+<td><strong>Objetivo:</strong></td>
+<td>Criar publicações que podem ser textos, imagens, vídeos, gifs, emojis, entre outros.</td>
+</tr>
+<tr>
+<td><strong>Contexto:</strong></td>
+<td>Navegação pelo app do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong></td>
+</tr>
+<tr>
+<td><strong>Atores:</strong></td>
+<td>Usuários</td>
+</tr>
+<tr>
+<td><strong>Recursos:</strong></td>
+<td>- Servidores do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>;</br>- Computador, celular ou tablet;</br>- O usuário precisa estar conectado a internet;</br>- O usuário precisa estar logado em sua conta do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>.</td>
+</tr>
+<tr>
+<td><strong>Exceção:</strong></td>
+<td>- Queda dos servidores;</br>- Problemas na internet;</br>- Problemas no hardware que está sendo utilizado.</td>
+</tr>
+<tr>
+<td><strong>Episódios:</strong></td>
+<td>- Usuário abre a aplicação do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>;</br>- Usuario clica em "criar novo tweet";</br>- Usuário escreve o que irá publcicar;</br>- Usuário clica em "<strong><a href="../../lexicos/lexicos-1_0/#lxTweetar">tweetar</a></strong>" para publicar o seu tweet.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="explorar">Explorar</h3>
+<p><strong>Autor</strong> : Fernando Aguilar </br>
+<strong>Versão:</strong> 0.2  </br></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Titulo:</strong></td>
+<td>explorar</td>
+</tr>
+<tr>
+<td><strong>Objetivo:</strong></td>
+<td>Descobrir novos conteúdos com base nas categorias de sugestões feitas pelo <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>.</td>
+</tr>
+<tr>
+<td><strong>Contexto:</strong></td>
+<td>- Navegação no app <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>;</br>- O usuário pode navegar por novos <strong><a href="../../lexicos/lexicos-1_0/#lxTweet">tweets</a></strong> e explorar assuntos de acordo com as categorias pré-definidas.</td>
+</tr>
+<tr>
+<td><strong>Atores:</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Recursos:</strong></td>
+<td>Acessar sugestões <strong><a href="../../lexicos/lexicos-1_0/#lxParaVoce">para você</a></strong>, Notícias, Esportes, Divrersão, Entreterimento, <strong><a href="../../lexicos/lexicos-1_0/#lxTrending">trending</a></strong> topics, etc.</td>
+</tr>
+<tr>
+<td><strong>Exceção:</strong></td>
+<td>- O app não abre;</br>- Não há notícias recomendadas;</br>- O usuário não possui conexão com a rede e portanto as notícias não são exibida.</td>
+</tr>
+<tr>
+<td><strong>Episódios:</strong></td>
+<td>- O usuário abre o app <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>;</br>- Ele clica no icone explorar;</br>- O usuário escolhe um tópico da lista para ler;</br>- Ele clica no tópico e é redirecionado para a nova página.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="comentar-tweets">Comentar <strong><a href="../../lexicos/lexicos-1_0/#lxTweet">Tweets</a></strong></h3>
+<p><strong>Autor</strong> : Aline Laureano </br>
+<strong>Versão:</strong> 0.2  </br></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Titulo:</strong></td>
+<td>comentar <strong><a href="../../lexicos/lexicos-1_0/#lxTweet">tweets</a></strong></td>
+</tr>
+<tr>
+<td><strong>Objetivo:</strong></td>
+<td>comentar um tweet publicado.</td>
+</tr>
+<tr>
+<td><strong>Contexto:</strong></td>
+<td>Navegar e interagir com o app do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>.</td>
+</tr>
+<tr>
+<td><strong>Atores:</strong></td>
+<td>Usuários</td>
+</tr>
+<tr>
+<td><strong>Recursos:</strong></td>
+<td>- Servidores do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>;</br>- Computador, celular ou tablet;</br>- O usuário precisa estar conectado à Internet;</br>- O usuário precisa estar com o <strong><a href="../../lexicos/lexicos-1_0/#lxLogin">Login</a></strong> na sua conta efetuado.</td>
+</tr>
+<tr>
+<td><strong>Exceção:</strong></td>
+<td>- Queda dos servidores do <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>;</br>- Falha de conexão com a Internet;</br>- Problemas no hardware que está sendo utilizado;</td>
+</tr>
+<tr>
+<td><strong>Episódios:</strong></td>
+<td>- O usuário navega e visualiza os <strong><a href="../../lexicos/lexicos-1_0/#lxTweet">tweets</a></strong> publicados no <strong><a href="../../lexicos/lexicos-1_0/#lxTwitter">twitter</a></strong>;</br>- O usuário escolhe um tweet em que ele deseja comentar;</br>- O usuário clica no símbolo de realizar um comentário;</br>- O usuário digita o seu comentário;</br>- O usuário clica no botão "Responder" para publicar o seu comentário.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<h2 id="versionamento-de-edicoes-desta-pagina">Versionamento de edições desta página</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Autor</th>
+<th>Descrição</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11/10/2019</td>
+<td>Aline Laureano</td>
+<td>Criação da página, adição da descrição da página &amp; dos cenários em formato de tabela com alguns links para os léxicos.</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>15/10/2019</td>
+<td>Aline Laureano</td>
+<td>Adição dos links para os léxicos.</td>
+<td>0.2</td>
+</tr>
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

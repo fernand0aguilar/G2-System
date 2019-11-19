@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Entrevistas - Twitter Requirements</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Twitter Requirements</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pŕe-rastreabilidade <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../pre-rastreabilidade/richpicture/">RichPicture</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elicitação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="./">Entrevistas</a>
+</li>
+                                    
+<li >
+    <a href="../../storytelling/">Storytelling</a>
+</li>
+                                    
+<li >
+    <a href="../../requisitos/">Requisitos & MoSCoW</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modelagem <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../modelagem/cenarios/cenarios-1_0/">Cenários 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../../../modelagem/cenarios/cenarios/">Cenários 0.1</a>
+</li>
+                                    
+<li >
+    <a href="../../../modelagem/lexicos/lexicos-1_0/">Léxicos 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../../../modelagem/lexicos/lexicos/">Léxicos 0.1</a>
+</li>
+                                    
+<li >
+    <a href="../../../modelagem/use_cases_specifications/user_case_geral/">Caso de uso - Geral</a>
+</li>
+                                    
+<li >
+    <a href="../../../modelagem/use_cases_specifications/trending_topics/">Caso de uso - Trending Topics</a>
+</li>
+                                    
+<li >
+    <a href="../../../modelagem/use_cases_specifications/login/">Caso de uso - Login</a>
+</li>
+                                    
+<li >
+    <a href="../../../modelagem/backlog_do_produto/">Backlog do produto</a>
+</li>
+                                    
+<li >
+    <a href="../../../modelagem/NFR/nfr_diagramas/">NFR</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Análise <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../analise/definicao/">Definição</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_rich_picture/">Inspeção RichPicture - Template</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_moscow_requisitos/">Inspeção - MoSCoW e Requisitos</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_entrevistas/">Inspeção - Entrevistas</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_backlog_produto/">Inspeção - Backlog do Produto</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_nfr/">Inspeção - NFR</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_cenarios/">Inspeção - Cenários</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_lexicos/">Inspeção - Léxicos</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Outros artefatos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../outros_artefatos/PDCA/">PDCA</a>
+</li>
+                                    
+<li >
+    <a href="../../../outros_artefatos/5w2h/">5W2H</a>
+</li>
+                                    
+<li >
+    <a href="../../../outros_artefatos/swot/">SWOT</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../../pre-rastreabilidade/richpicture/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../../storytelling/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Requisitos2-2019/Twitter/edit/master/docs/elicitacao/entrevistas/entrevistas.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#o-metodo-das-entrevistas">O método das Entrevistas</a></li>
+            <li><a href="#algumas-entrevistas">Algumas entrevistas</a></li>
+            <li><a href="#respostas">Respostas</a></li>
+            <li><a href="#versionamento-de-edicoes-desta-pagina">Versionamento de edições desta página</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><span style="margin-left: 40%;"><img alt="Twitter Logo" src="../../../images/twitter-logo-100px.png" /></span></p>
+<hr />
+<h1 id="o-metodo-das-entrevistas">O método das Entrevistas</h1>
+<p>A elicitação de requisitos tem diversas técnicas, e a entrevista é uma delas. Isso consiste em
+dialogar com um usuário sobre o sistema/software com a finalidade de, a partir das respostas
+dele, levantar os requisitos necessários para o produto/serviço de software.</p>
+<p>Cada integrante da nossa equipe de engenharia de requisitos entrevistou pelo menos um usuário. A partir disso, cada integrante redigiu um documento mostrando as perguntas feitas e as respostas dos usuários.</p>
+<p>Logo após isso, montamos uma planilha e, em conjunto, enumeramos e discutimos todos os requisitos levantados, passando por um processo de introspecção.</p>
+<p>Para ver os requisitos elicitados, visite a página <a href="../../requisitos/">Requisitos</a></p>
+<hr />
+<h2 id="algumas-entrevistas">Algumas entrevistas</h2>
+<h3 id="perguntas-base-utilizadas">Perguntas base utilizadas:</h3>
+<ol>
+<li><strong>Qual funcionalidade do Twitter você mais gosta? E qual você mais utiliza? Qual você menos gosta? Qual você menos utiliza?</strong></li>
+<li><strong>Você precisa de mais ou de menos tempo para fazer alguma ação no aplicativo? Se sim, de quanto?</strong></li>
+<li><strong>Você já teve seus dados vazados de alguma forma a partir do Twitter? Se não , conhece alguma história sobre isso?</strong></li>
+<li><strong>Você utiliza alguma outra rede social?</strong></li>
+<li><strong>Que tipo de conteúdo você consome exclusivamente no Twitter?</strong></li>
+<li><strong>Qual o diferencial do Twitter em relação as outras redes Sociais, na sua opinião?</strong></li>
+<li><strong>Você costuma interagir com os anúncios que aparecem pra você?</strong></li>
+<li><strong>Você já realizaou alguma compra a partir de um anúncio do Twitter?</strong></li>
+</ol>
+<h2 id="respostas">Respostas</h2>
+<h3 id="amanda-carvalho-21-anos">Amanda Carvalho - 21 anos</h3>
+<h6 id="entrevistadora-aline">Entrevistadora : Aline</h6>
+<ol>
+<li>A funcionalidade que eu mais gosto é a do retweet. O que eu mais utilizo são as funcionalidades de dar like e de dar retweet. A funcionalidade que eu menos gosto e utilizo é a de Direct Message.</li>
+<li>Gasto pouco tempo para fazer o que eu quiser no Twitter. A ação mais demorada que faço é a de escrever um tweet e ainda assim, levo no máximo 5 minutos para criar um novo tweet.</li>
+<li>Não e eu também não conheço nenhuma história sobre isso.</li>
+<li>Sim, eu utilizo o Facebook, Instagram e o Medium.</li>
+<li>As opiniões dos políticos e dos meus artistas preferidos do mundo todo.</li>
+<li>Como os tweets são curtos, é a rapidez de criar tweets, de ler eles e de buscar informações.</li>
+<li>Sim.</li>
+<li>Não.</li>
+</ol>
+<h3 id="harissane-luana-17-anos">Harissane Luana - 17 anos</h3>
+<h6 id="entrevistador-bruno">Entrevistador : Bruno</h6>
+<ol>
+<li>Eu gosto das enquetes, utilizo mais o "fav", não tem uma funcionalidade que eu goste menos e utilizo menos o silenciador de palavras/pessoas</li>
+<li>Não.</li>
+<li>Não e não conheço nenhuma história sobre.</li>
+<li>Não.</li>
+<li>Conteúdo de entretenimento esportivo (futebol, principalmente), político ou social (nada especificamente).</li>
+<li>Ser mais prático, simples e bem mais informativo .</li>
+<li>Não, nem os promovidos.</li>
+<li>Não.</li>
+</ol>
+<h3 id="maria-eduarda-15-anos">Maria Eduarda - 15 anos</h3>
+<h6 id="entrevistador-erick">Entrevistador : Erick</h6>
+<ol>
+<li>O Twitter serve pra eu poder me distrair, ver memes muito engraçados e saber de várias notícias, além de poder desabafar lá. Eu vejo mais memes. Não há nada que eu não goste nem que menos utilize.</li>
+<li>Menos. Cerca de segundos.</li>
+<li>Não, apenas se forem os que eu postei e não são de demasiada importância. Não.</li>
+<li>Sim.</li>
+<li>Nenhum é exclusivo.</li>
+<li>A proximidade  das pessoas em falarem o que estão pensando no mesmo momento, é uma plataforma livre.</li>
+<li>Não.</li>
+<li>Não.</li>
+</ol>
+<h3 id="mateus-oliverira-23-anos">Mateus Oliverira - 23 anos</h3>
+<h6 id="entrevistador-eugenio">Entrevistador : Eugênio</h6>
+<ol>
+<li>Mais gosto: Twittar, mais utilizo: Twittar, menos gosto: Explorar, menos utilizo: Explorar.</li>
+<li>Menos de 1 minuto.</li>
+<li>Não, não conheço.</li>
+<li>Sim, facebook e instagram.</li>
+<li>Não costumo postar em outras redes sociais, utilizo o twitter também para notícias rápidas, como de esportes etc.</li>
+<li>Ele é voltado para postagens curtas, rápidas, semelhantes a um diário. Torna mais conveniente de twittar algo pois é a finalidade do aplicativo, e todos os outros estão fazendo o mesmo, ao contrário do facebook, por exemplo, que normalmente os textos são acompanhados de fotos etc.</li>
+<li>Não.</li>
+<li>Não.</li>
+</ol>
+<h3 id="yago-24-anos">Yago - 24 anos</h3>
+<h6 id="entrevistador-fernando">Entrevistador : Fernando</h6>
+<ol>
+<li>Retweet, o que menos utilizo é o like. O que eu menos gosto também é o like.</li>
+<li>Acho que está tranquilo o tempo que já tem.</li>
+<li>Não.</li>
+<li>Sim, Instagram e Facebook.</li>
+<li>Informações diárias dos meus amigos pessoais.</li>
+<li>É mais rápido, o conteúdo chega mais rápido.</li>
+<li>Não.</li>
+<li>Não.</li>
+</ol>
+<h3 id="luana-19-anos">Luana - 19 anos</h3>
+<h6 id="entrevistador-fernando_1">Entrevistador : Fernando</h6>
+<ol>
+<li>Uma das que eu mais gosto é a seleção e sugestão de tweets depois de um certo tempo fora da plataforma. A que eu menos utilizo é hashtags e trending topics. Mas principalmente hashtags.</li>
+<li>Não, acho que no twitter é tudo bem rápido. Uma das coisas boas é que as informações correm muito rápido, e como os tweets são curtos você também absorve informação muito rápido.</li>
+<li>Não.</li>
+<li>Sim, Instagram por que acho que é uma rede melhor para mídia visual.</li>
+<li>Para texto e consumir notícias e besteiras, como memes e etc.</li>
+<li>As pessoas que utilizam o Twitter. É um nicho diferente. É um nicho no qual eu me enxergo. E também a rapidez, como são coisas curtinhas me identifico nisso.</li>
+<li>Não.</li>
+<li>Não.</li>
+</ol>
+<h3 id="marlon-mendes-24-anos">Marlon Mendes - 24 anos</h3>
+<h6 id="entrevistadora-lorrany">Entrevistadora : Lorrany</h6>
+<ol>
+<li>A de explorar novas notícias e novidades, não cobrir conteúdos explícitos que algumas pessoas possam ser sensíveis, encontrar novos amigos.</li>
+<li>15 minutos.</li>
+<li>Nunca tive e nunca ouvi falar.</li>
+<li>Sim, o Reddit.</li>
+<li>Nenhum.</li>
+<li>Não.</li>
+<li>Não.</li>
+<li>Que o site tenha uma funcionalidade que sugira notícias e conteúdos novos. Que o site tenha cuidado ao exibir conteúdos violentos ou que possam ser ofensivos para algumas pessoas.</li>
+</ol>
+<hr />
+<h2 id="versionamento-de-edicoes-desta-pagina">Versionamento de edições desta página</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Autor</th>
+<th>Descrição</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11/09/2019</td>
+<td>Erick Giffoni</td>
+<td>Criação e edição inicial da página.</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>11/09/2019</td>
+<td>Erick Giffoni</td>
+<td>Adição inicial de uma entrevista.</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>11/09/2019</td>
+<td>Aline Laureano</td>
+<td>Adição de mais entrevistas.</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>13/09/2019</td>
+<td>Erick Giffoni</td>
+<td>Correção dos títulos das entrevistas e revisão ortográfica</td>
+<td>0.4</td>
+</tr>
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

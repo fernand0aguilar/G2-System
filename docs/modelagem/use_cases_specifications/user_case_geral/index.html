@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Caso de uso - Geral - Twitter Requirements</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Twitter Requirements</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pŕe-rastreabilidade <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../pre-rastreabilidade/richpicture/">RichPicture</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elicitação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../elicitacao/entrevistas/entrevistas/">Entrevistas</a>
+</li>
+                                    
+<li >
+    <a href="../../../elicitacao/storytelling/">Storytelling</a>
+</li>
+                                    
+<li >
+    <a href="../../../elicitacao/requisitos/">Requisitos & MoSCoW</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modelagem <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../cenarios/cenarios-1_0/">Cenários 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../../cenarios/cenarios/">Cenários 0.1</a>
+</li>
+                                    
+<li >
+    <a href="../../lexicos/lexicos-1_0/">Léxicos 1.0</a>
+</li>
+                                    
+<li >
+    <a href="../../lexicos/lexicos/">Léxicos 0.1</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Caso de uso - Geral</a>
+</li>
+                                    
+<li >
+    <a href="../trending_topics/">Caso de uso - Trending Topics</a>
+</li>
+                                    
+<li >
+    <a href="../login/">Caso de uso - Login</a>
+</li>
+                                    
+<li >
+    <a href="../../backlog_do_produto/">Backlog do produto</a>
+</li>
+                                    
+<li >
+    <a href="../../NFR/nfr_diagramas/">NFR</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Análise <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../analise/definicao/">Definição</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_rich_picture/">Inspeção RichPicture - Template</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_moscow_requisitos/">Inspeção - MoSCoW e Requisitos</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_entrevistas/">Inspeção - Entrevistas</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_backlog_produto/">Inspeção - Backlog do Produto</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_nfr/">Inspeção - NFR</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_cenarios/">Inspeção - Cenários</a>
+</li>
+                                    
+<li >
+    <a href="../../../analise/inspecao_lexicos/">Inspeção - Léxicos</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Outros artefatos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../outros_artefatos/PDCA/">PDCA</a>
+</li>
+                                    
+<li >
+    <a href="../../../outros_artefatos/5w2h/">5W2H</a>
+</li>
+                                    
+<li >
+    <a href="../../../outros_artefatos/swot/">SWOT</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../lexicos/lexicos/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../trending_topics/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Requisitos2-2019/Twitter/edit/master/docs/modelagem/use_cases_specifications/user_case_geral.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#caso-de-uso-sistema-geral">Caso de Uso: Sistema Geral</a></li>
+            <li><a href="#diagrama">Diagrama</a></li>
+            <li><a href="#especificacoes">Especificações</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><span style="margin-left: 40%;"><img alt="Twitter Logo" src="../../../images/twitter-logo-100px.png" /></span></p>
+<hr />
+<h1 id="caso-de-uso-sistema-geral">Caso de Uso: Sistema Geral</h1>
+<hr />
+<h2 id="diagrama">Diagrama</h2>
+<hr />
+<p><strong>Autore(s):</strong> Lorrany Azevedo e Aline Laureano. </br>
+<strong>Versão:</strong> <em>0.2 (última versão)</em></p>
+<p><img alt="Caso de uso: Sistema geral" src="../../images/UC-SistemaGeral-v2.jpg" /></p>
+<hr />
+<p><strong>Autore(s):</strong> Lorrany Azevedo e Aline Laureano. </br>
+<strong>Versão:</strong> <em>0.1</em></p>
+<p><img alt="Caso de uso: Sistema geral" src="../../images/UC-SistemaGeral.jpg" /></p>
+<hr />
+<h2 id="especificacoes">Especificações</h2>
+<hr />
+<p><span id="UC01"></span></p>
+<h3 id="uc01-efetuar-login"><a href="#UC01">UC01</a> - Efetuar Login</h3>
+<p><strong>Autore(s):</strong> Aline Laureano. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>É a funcionalidade que realiza o login no Twitter.</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>O usuário deve estar cadastrado no Twitter.</br>O usuário deve ter conexão com a Internet.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>O usuário terá o seu login efetuado na aplicação.</br>O usuário terá acesso a todas as funcionalidades em que ele tem permissão de uso na aplicação.</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP01] Fluxo iniciado quando o usuário deseja efetuar o login no Twitter:</br>1. O usuário clica em “Entrar”;</br>2. O usuário digita o seu e-mail;</br>3. O usuário digita a sua senha de acesso à sua conta;</br>4. O usuário é redirecionado para a página inicial da aplicação com o login já efetuado.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA01] No passo 3 do [FP01], caso o usuário esqueça a sua senha ele deve:</br>1. Clicar no link “Esqueceu sua senha?”;</br>2. Digitar o e-mail cadastrado na sua conta do Twitter;</br>3. Clicar em Buscar;</br>4. Escolher se o link de redefinição de senha será enviado para o seu celular ou para o seu e-mail;</br>5. Acessar o link de redefinição de senha;</br>6. Digitar a nova senha de acesso à sua conta no Twitter;</br>7. Digitar novamente a nova senha;</br>8. Clicar no botão “Confirmar”;</br>9. O usuário é redirecionado para a página inicial da aplicação com o login efetuado com a sua nova senha.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE01] Falha de conexão com a internet:</br>No passo 2 do [FP01] ocorre uma falha de conexão com a Internet.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC02"></span></p>
+<h3 id="uc02-efetuar-cadastro"><a href="#UC02">UC02</a> - Efetuar Cadastro</h3>
+<p><strong>Autore(s):</strong> Aline Laureano. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade responsável por cadastrar novos usuários na aplicação.</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Visitante e Usuário.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>O Visitante deve ter conexão com a internet.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>O Visitante terá uma nova conta cadastrada no Twitter.</br>O Visitante vai se tornar um novo Usuário da aplicação.</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP01] Fluxo iniciado quando um Visitante deseja se cadastrar no Twitter:</br>1. O Visitante clica em “Inscrever-se”;</br>2. O Visitante digita o seu nome e o seu número de celular;</br>3. O Visitante clica em “Avançar”;</br>4. O Visitante seleciona as opções para personalizar a experiência dele com o Twitter;</br>5. O Visitante clica em “Avançar” novamente;</br>6. O Visitante confirma os seus dados e clica em “Inscrever-se”;</br>7. O Visitante recebe um código de verificação no seu celular;</br>8. O Visitante digita o código de verificação na página de cadastro do Twitter;</br>9. O Visitante digita o seu nome de usuário do Twitter;</br>10. O Visitante é redirecionado como Usuário para uma a sua conta cadastrada no Twitter.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE01] Falha de conexão com a internet:</br>No passo 1 do [FP01] ocorre uma falha de conexão com a Internet.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC03"></span></p>
+<h3 id="uc03-navegar-na-homepage"><a href="#UC03">UC03</a> - Navegar na Homepage</h3>
+<p><strong>Autore(s):</strong> Aline Laureano. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade que permite ao usuário interagir com a Homepage do Twitter.</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>O usuário deve estar cadastrado no Twitter.</br>O usuário deve ter conexão com a Internet.</br>O usuário deve ter o login efetuado na aplicação.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>O usuário terá acesso a todas as informações disponibilizadas na Homepage do Twitter.</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP01] Fluxo iniciado quando o usuário deseja interagir com a Homepage do Twitter:</br>1. O usuário visualiza a Homepage do Twitter;</br>2. O usuário percorre a Homepage para visualizar as publicações dos usuários que ele segue.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE01] Falha de conexão com a internet:</br>No passo 1 do [FP01] ocorre uma falha de conexão com a Internet.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC04"></span></p>
+<h3 id="uc04-ver-tweet"><a href="#UC04">UC04</a> - Ver Tweet</h3>
+<p><strong>Autore(s):</strong> Aline Laureano. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade que permite o usuário visualizar para interagir com um tweet.</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>O usuário deve estar cadastrado no Twitter.</br>O usuário deve ter conexão com a Internet.</br>O usuário deve ter o login efetuado na aplicação.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>O usuário poderá visualizar e interagir com um tweet.</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP01] Fluxo iniciado quando o usuário deseja visualizar tweets:</br>1. O usuário navega pela Homepage - [UC03];</br>2. O usuário visualiza e pode interagir com os tweets publicados.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA01] Ver tweets do perfil de outro usuário:</br>No passo 1, ao invés do usuário navegar pela Homepage ele vai:</br>1. Acessar o perfil de outro usuário;</br>2. Navegar pela página de perfil do outro usuário;</br>3. Visualizar e interagir com os tweets publicados pelo outro usuário.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE01] Falha de conexão com a internet:</br>No passo 1 do [FP01] ocorre uma falha de conexão com a Internet.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC05"></span></p>
+<h3 id="uc05-gostar-do-tweet"><a href="#UC05">UC05</a> - Gostar do Tweet</h3>
+<p><strong>Autore(s):</strong> Aline Laureano. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade que permite um usuário gostar de um tweet.</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>O usuário deve estar cadastrado no Twitter.</br>O usuário deve ter conexão com a Internet.</br>O usuário deve ter o login efetuado na aplicação.</br>O usuário deve estar visualizando o tweet que ele deseja gostar.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>O usuário terá o tweet marcado como gostado.</br>O tweet será adicionado para a lista de tweets gostados do usuário.</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP01] Fluxo iniciado quando um usuário deseja gostar de um tweet:</br>1. O usuário visualiza o conteúdo de um tweet;</br>2. O usuário clica no símbolo de coração localizado próximo ao tweet visualizado;</br>3. O usuário visualiza o tweet marcado como gostado com o símbolo passando a se mostrar preenchido e com o número de “gostei” ao lado do símbolo do coração sendo incrementado em um.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE01] Falha de conexão com a internet:</br>No passo 2 do [FP01] ocorre uma falha de conexão com a Internet.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC06"></span></p>
+<h3 id="uc06-dar-retweet"><a href="#UC06">UC06</a> - Dar Retweet</h3>
+<p><strong>Autore(s):</strong> Aline Laureano. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade que permite que um usuário dê um Retweet um tweet publicado por outro usuário.</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>O usuário deve estar cadastrado no Twitter.</br>O usuário deve ter conexão com a Internet.</br>O usuário deve ter o login efetuado na aplicação.</br>O usuário deve estar visualizando o tweet que ele deseja dar um Retweet.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>O usuário terá o tweet de outro usuário publicado na sua conta do Twitter.</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP01] Fluxo iniciado quando um usuário deseja dar um Retweet em um tweet de outro usuário:</br>1. O usuário visualiza o conteúdo de um tweet;</br>2. O usuário clica no símbolo de dar Retweet localizado próximo ao tweet visualizado;</br>3. O usuário tem o tweet publicado na conta como um Retweet.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE01] Falha de conexão com a internet:</br>No passo 2 do [FP01] ocorre uma falha de conexão com a Internet.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC07"></span></p>
+<h3 id="uc07-comentar-tweet"><a href="#UC07">UC07</a> - Comentar tweet</h3>
+<p><strong>Autore(s):</strong> Aline Laureano. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade que permite que um usuário faça um comentário a um tweet.</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>O usuário deve estar cadastrado no Twitter.</br>O usuário deve ter conexão com a Internet.</br>O usuário deve ter o login efetuado na aplicação.</br>O usuário deve estar visualizando o tweet que ele deseja comentar.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>O usuário terá o seu comentário publicado no tweet.</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP01] Fluxo iniciado quando um usuário deseja comentar um tweet:</br>1. O usuário visualiza o conteúdo de um tweet;</br>2. O usuário clica no símbolo de comentar localizado próximo ao tweet visualizado;</br>3. O usuário digita o comentário que ele deseja realizar;</br>4. O usuário clica no botão “Comentar”;</br>5. O usuário tem o seu comentário publicado no tweet em questão.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE01] Falha de conexão com a internet:</br>No passo 2 do [FP01] ocorre uma falha de conexão com a Internet.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC08"></span></p>
+<h3 id="uc08-salvar-tweet"><a href="#UC08">UC08</a> - Salvar tweet</h3>
+<p><strong>Autore(s):</strong> Aline Laureano. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade que permite que um usuário salve um tweet.</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>O usuário deve estar cadastrado no Twitter.</br>O usuário deve ter conexão com a Internet.</br>O usuário deve ter o login efetuado na aplicação.</br>O usuário deve estar visualizando o tweet que ele deseja salvar.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>O usuário terá o tweet salvo na sua lista de tweets salvos.</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP01] Fluxo iniciado quando um usuário deseja salvar um tweet:</br>1. O usuário visualiza o conteúdo de um tweet;</br>2. O usuário clica no símbolo de salvar localizado próximo ao tweet visualizado;</br>3. O tweet é salvo na lista de tweets salvos do usuários.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE01] Falha de conexão com a internet:</br>No passo 2 do [FP01] ocorre uma falha de conexão com a Internet.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC09"></span></p>
+<h3 id="uc09-buscar-na-barra-de-pesquisa"><a href="#UC09">UC09</a> - Buscar na Barra de pesquisa</h3>
+<p><strong>Autore(s):</strong> Aline Laureano. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade que permite ao usuário realizar pesquisas no Twitter.</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>O usuário deve estar cadastrado no Twitter.</br>O usuário deve ter conexão com a Internet.</br>O usuário deve ter o login efetuado na aplicação.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>O usuário poderá visualizar os resultados da pesquisa que ele fez.</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP01] Fluxo iniciado quando um usuário deseja realizar uma pesquisa no Twitter:</br>1. O usuário clica na barra de pesquisa do Twitter;</br>2. O usuário digita o que ele quer pesquisar;</br>3. O usuário pressiona a tecla enter ou clica no símbolo de pesquisar;</br>4. O usuário é redirecionado para uma página com o(s) resultado(s) da pesquisa.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE01] Falha de conexão com a internet:</br>No passo 3 do [FP01] ocorre uma falha de conexão com a Internet.</br>[FE02] Nenhum resultado encontrado:</br>No passo 4 do [FP01], é mostrado, no local destinado aos resultados da pesquisa, a mensagem de que nenhum resultado foi encontrado.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC10"></span></p>
+<h3 id="uc10-buscar-palavra"><a href="#UC10">UC10</a> - Buscar Palavra</h3>
+<p><strong>Autore(s):</strong> Aline Laureano. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade que permite ao usuário pesquisar uma palavra no Twitter.</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário.</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>O usuário deve estar cadastrado no Twitter.</br>O usuário deve ter conexão com a Internet.</br>O usuário deve ter o login efetuado na aplicação.</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>O usuário poderá visualizar os resultados da pesquisa que ele fez.</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP01] Fluxo iniciado quando um usuário deseja pesquisar uma palavra no Twitter:</br>1. O usuário clica na barra de pesquisa do Twitter;</br>2. O usuário digita a palavra que ele quer pesquisar;</br>3. O usuário pressiona a tecla enter ou clica no símbolo de pesquisar;</br>4. O usuário é redirecionado para uma página com o(s) resultado(s) da pesquisa.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE01] Falha de conexão com a internet:</br>No passo 3 do [FP01] ocorre uma falha de conexão com a Internet.</br>[FE02] Nenhum resultado encontrado:</br>No passo 4 do [FP01], é mostrado, no local destinado aos resultados da pesquisa, a mensagem de que nenhum resultado foi encontrado.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC11"></span></p>
+<h3 id="uc11-buscar-hashtags"><a href="#UC11">UC11</a> - Buscar Hashtags</h3>
+<p><strong>Autore(s):</strong> Lorrany Azevedo. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade responsável buscar uma hashtag na aplicação</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>* O usuário precisa ter acesso a internet </br> * O usuário precisa estar logado</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>* O usuário encontrará tweets que usaram aquela hashtag </br> * O usuário poderá ver se a hashtag está nos assuntos mais comentados do twitter</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP11] Este fluxo se inicia quando o usuário deseja buscar uma hashtag na aplicação </br> 1. Usuário faz login na plataforma. </br> 2. Usuário clica no botão de buscar. </br> 3. Usuário digita a hashtag que ele deseja buscar. </br> 4. Usuário vê tweets em destaque que utilizam aquela hashtag</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA11] Possibilidade de ver tweets além dos destaques </br> O Usuário pode escolher ver os tweets mais recentes que usaram aquela hashtag, ver pessoas, fotos e vídeos que usaram a hashtag.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE11]  Notificação de hashtag inexistente </br> Caso a hashtag buscada pelo usuário não exista, é retornada uma mensagem dizendo que nenhum resultado foi encontrado.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC12"></span></p>
+<h3 id="uc12-ver-topicos-sugeridos"><a href="#UC12">UC12</a> - Ver tópicos sugeridos</h3>
+<p><strong>Autore(s):</strong> Lorrany Azevedo. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade responsável por mostrar ao usuário tópicos que possam lhe interessar</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>* O usuário precisa ter acesso a internet </br> * O usuário precisa estar logado</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>* O usuário encontrará assuntos e tweets que possam lhe interessar </br> * O usuário poderá ver os assuntos mais comentados do twitter </br> * O usuário poderá ver notícias, esportes, diversão e entretenimento</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP12] Este fluxo se inicia quando o usuário deseja fazer alguma busca e vê os assuntos sugeridos </br> 1. Usuário faz login na plataforma </br> 2. Usuário clica no botão de buscar </br> 3. Usuário se depara com as sugestões do twitter </br> 4. Usuário vê tweets em destaque e pode escolher visualizar os tweets dos assuntos sugeridos</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA12] Possibilidade de apenas realizar a busca </br> Possibilidade de apenas realizar a busca</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE12] Não identificados</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC13"></span></p>
+<h3 id="uc13-reportar-conteudo"><a href="#UC13">UC13</a> - Reportar conteúdo</h3>
+<p><strong>Autore(s):</strong> Lorrany Azevedo. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>Funcionalidade para denunciar conteúdos que sejam ofensivos ou que violam as diretrizes do twitter</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>* O usuário precisa ter acesso a internet </br> * O usuário precisa estar logado</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>* O usuário irá escolher o motivo da denúncia </br> * O usuário poderá bloquear ou silenciar o autor do tweet</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP13] Este fluxo se inicia quando o usuário se depara com algum conteúdo nocivo e deseja denunciá-lo </br> 1. Usuário faz login na plataforma </br> 2. Usuário visualiza o feed </br> 3. Usuário vê tweet ofensivo </br> 4. Usuário justifica o motivo da denúncia </br> 5. Usuário finaliza a denúncia</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA13] Usuário apenas denúncia o tweet </br> O Usuário pode escolher após a denúncia não silenciar ou bloquear o autor do tweet</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE12]  Denúncia inválida </br> Caso o Usuário faça a denúncia e o twitter decida que a publicação não fere as diretrizes do site, o usuário seŕa notificado se a publicação foi retirada ou não do ar por violar as diretrizes do twitter</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC14"></span></p>
+<h3 id="uc14-ver-notificacoes"><a href="#UC14">UC14</a> - Ver notificações</h3>
+<p><strong>Autore(s):</strong> Lorrany Azevedo. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>O usuário é notificado sempre que acontece alguma interação com outro usuário</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>* O usuário precisa ter acesso a internet </br> * O usuário precisa estar logado </br> * O usuário precisa seguir ou ser seguido por outros usuários</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>* O usuário verá a notificação</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP14]  Este fluxo se inicia quando o usuário é notificado de alguma atividade em seu twitter </br> 1. Usuário é notificado </br> 2. Usuário abre a notificação</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA14] O Usuário pode escolher como interagir com a notificação </br> O Usuário pode escolher responder o tweet ou mensagem direta que gerou a notificação, ele pode curtir o tweet, pode retweetar ou pode apenas visualizar a notificação</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE14] Desativar notificações </br> Caso o Usuário se sinta incomodado pelas notificações ele pode desativá-las</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC15"></span></p>
+<h3 id="uc15-interacao-com-outros-usuarios"><a href="#UC15">UC15</a> - Interação com outros usuários</h3>
+<p><strong>Autore(s):</strong> Lorrany Azevedo. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>O usuário pode reagir a publicações de outros usuários e também pode enviar mensagens diretas</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>* O usuário precisa ter acesso a internet </br> * O usuário precisa estar logado </br> * O usuário precisa seguir ou ser seguido por outros usuários</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>* O usuário poderá interagir com outros usuários</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP15]  Este fluxo se inicia quando o usuário interage com outros usuários </br> 1. Usuário cria conta  </br> 2. Usuário sege outros usuários </br> 3. Usuário interage com outros através de comentários, curtidas, retweets, comentários em publicações ou mensagens diretas</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA15] O Usuário pode escolher apenas visualizar as publicações</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE15] Limitar interações </br> Caso o Usuário queira ele pode trancar o seu perfil para que apenas seus seguidores consigam visualizar suas publicações e interagir com elas, ele pode também trancar a caixa de mensagens</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC16"></span></p>
+<h3 id="uc16-seguir-outros-usuarios"><a href="#UC16">UC16</a> - Seguir outros usuários</h3>
+<p><strong>Autore(s):</strong> Lorrany Azevedo. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>O usuário pode seguir outros usuários para poder visualizar seus tweets sempre que forem postados e poder interagir com o mesmo</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>* O usuário precisa ter acesso a internet </br> * O usuário precisa estar logado</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>* O usuário poderá interagir com outros usuários</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP16] Este fluxo se inicia quando o usuário quer seguir outra pessoa </br> 1-Usuário faz login </br> 2-Usuário visualiza o feed com tweets de outros usuários </br> 3-Usuário clica no botão de pesquisar </br> 4-Usuário busca pelo nome de outro usuário </br> 5-Usuário começa a seguir este usuário.  clicando no botão “seguir”</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA16] Seguir pessoas sugeridas </br> O usuário pode seguir as pessoas recomendadas pelo twitter.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE16] Não usuário pode optar por não seguir ninguém</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC17"></span></p>
+<h3 id="uc17-enviar-mensagens-diretas"><a href="#UC17">UC17</a> - Enviar mensagens diretas</h3>
+<p><strong>Autore(s):</strong> Lorrany Azevedo. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>O usuário poderá ter conversas privadas com outros usuários que são seus seguidores ou tem a caixa de DM's aberta</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>* O usuário precisa ter acesso a internet </br> * O usuário precisa estar logado</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>* O usuário poderá ter conversas privadas com outros usuários</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP17] Este fluxo se inicia quando o usuário quer ter uma conversa através de uma espécie de chat </br> 1-Usuário faz login </br> 2- Usuário clica na caixa de mensagens </br> 3- Usuário busca pelo nome de outro usuário </br> 4-Usuário escreve mensagem </br> 5-Usuário clica em enviar mensagem</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA17]  </br> O usuário pode habilitar a caixa de mensagem para receber mensagem de qualquer usuário do twitter</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE17] O usuário pode trancar a sua caixa de mensagens</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC18"></span></p>
+<h3 id="uc18-criar-tweets"><a href="#UC18">UC18</a> - Criar tweets</h3>
+<p><strong>Autore(s):</strong> Lorrany Azevedo. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>O usuário poderá postar frases, fotos, vídeos ou enquetes em seu perfil</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>* O usuário precisa ter acesso a internet </br> * O usuário precisa estar logado</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>* As postagens do usuário serão visiveis para os seus seguidores e para outras pessoas caso seu perfil seja aberto</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP18] Este fluxo se inicia quando o usuário deseja compartilhar algum momento ou informação em seu perfil </br> 1-Usuário faz login </br> 2- Usuário clica na caixa de publicações </br> 3- Usuário escreve o que irá publicar  </br> 4-Usuário clica no botão "tweetar"</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA18]  </br> O usuário pode publicar em resposta a tweets de outras pessoas</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE18] Não identificado</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC19"></span></p>
+<h3 id="uc19-editar-perfil"><a href="#UC19">UC19</a> - Editar perfil</h3>
+<p><strong>Autore(s):</strong> Lorrany Azevedo. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>O usuário poderá editar a aparência e as informações do seu perfil de acordo com suas preferências</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>* O usuário precisa ter acesso a internet </br> * O usuário precisa estar logado</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>* O perfil irá ter a aparência desejada pela usuário</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP19] Este fluxo se inicia quando o usuário deseja mudar a aparência, segurança ou informações em seu perfil </br> 1-Usuário faz login </br> 2- Usuário clica em "Perfil" </br> 3- Usuário clica em "editar perfil"  </br> 4-Usuário escolhe qual das alterações disponiveis ele fará. </br> 5- Usuário clica em "Salvar" e salva as alterações feitas.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA19]  </br> O usuário pode escolher o que modificar </br> O usuário pode escolher editar sua foto de perfil, localização, data de nascimento, biográfia e nome.</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE19] O usuário pode não fazer nenhuma alteração em seu perfil apenas clicando em "salvar"</td>
+</tr>
+</tbody>
+</table>
+<p><span id="UC20"></span></p>
+<h3 id="uc20-acessar-central-de-ajuda"><a href="#UC20">UC20</a> - Acessar central de ajuda</h3>
+<p><strong>Autore(s):</strong> Lorrany Azevedo. </br>
+<strong>Versão:</strong> 0.1</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descrição</strong></td>
+<td>O usuário poderá procurar por ajudar e instruções de como o site funciona e deve ser utilizado</td>
+</tr>
+<tr>
+<td><strong>Ator(es)</strong></td>
+<td>Usuário</td>
+</tr>
+<tr>
+<td><strong>Pré-Condições</strong></td>
+<td>* O usuário precisa ter acesso a internet </br> * O usuário precisa estar logado</td>
+</tr>
+<tr>
+<td><strong>Pós-Condições</strong></td>
+<td>* O usuário irá sanar suas dúvidas a respeito do funcionamento do app/site</td>
+</tr>
+<tr>
+<td><strong>Fluxo Principal</strong></td>
+<td>[FP20] Este fluxo se inicia quando o usuário tem alguma dúvida a respeito do site </br> 1-Usuário faz login </br> 2- Usuário clica em "Central de Ajuda" </br> 3- Usuário busca pela sua dúvida </br> 4- Usuário é redirecionado para a página que sana suas dúvidas</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) Alternativos</strong></td>
+<td>[FA20]  </br> O usuário pode escolher entre uma das opções de ajuda que o twitter disponibiliza </br> O usuário pode escolher entre algumas opções de ajuda que o twitter disponibiliza entre elas tem a opção de "Como usar o Twitter" entre outras</td>
+</tr>
+<tr>
+<td><strong>Fluxo(s) de exceção</strong></td>
+<td>[FE20] O usuário faz busca inexistente </br>Caso o usuário busque por uma dúvida que não está disponível na central de ajuda o twitter retorna uma mensagem de "Nenhum resultado encontrado"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="versionamento-de-edicoes-desta-pagina">Versionamento de edições desta página</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Autor</th>
+<th>Descrição</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>24/09/2019</td>
+<td>Aline Laureano, Lorrany Azevedo</td>
+<td>Criação da página e inserção do Caso de uso SISTEMA GERAL.</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>27/09/2019</td>
+<td>Lorrany Azevedo</td>
+<td>Especificação dos requisitos UC11 até o UC20</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>30/09/2019</td>
+<td>Aline Laureano</td>
+<td>Especificação dos requisitos UC01 até o UC10 &amp; adição dos autores e das versões das especificações.</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>18/10/2019</td>
+<td>Aline Laureano</td>
+<td>Adição da versão 0.2 do diagrama de Caso de uso SISTEMA GERAL.</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>04/11/2019</td>
+<td>Erick Giffoni</td>
+<td>Adição dos id's de identificação de cada UC para ser possível acessá-las via link</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
